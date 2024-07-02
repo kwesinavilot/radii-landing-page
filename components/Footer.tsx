@@ -37,7 +37,8 @@ const Footer = () => {
     setIsSubmitting(true);
     setError('');
 
-    const email = event.target.email.value;
+    const form = event.target as HTMLFormElement;
+    const email = (form.elements.namedItem('email') as HTMLInputElement).value;
 
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     if (!emailRegex.test(email)) {
@@ -110,45 +111,46 @@ const Footer = () => {
           <Separator />
         </div>
         <div>
-          <NavigationMenu className="ms-auto">
-            <NavigationMenuList className="ms-auto hidden lg:flex">
-              <NavigationMenuItem>
-                <NavigationMenuLink as={Link} href="/" className={navigationMenuTriggerStyle()}>
-                  Home
-                </NavigationMenuLink>
-              </NavigationMenuItem>
-              <NavigationMenuItem>
-                <NavigationMenuLink as={Link} href="/about" className={navigationMenuTriggerStyle()}>
-                  About
-                </NavigationMenuLink>
-              </NavigationMenuItem>
-              <NavigationMenuItem>
-                <NavigationMenuLink as={Link} href="/features" className={navigationMenuTriggerStyle()}>
-                  Features
-                </NavigationMenuLink>
-              </NavigationMenuItem>
-              <NavigationMenuItem>
-                <NavigationMenuLink as={Link} href="/testimonials" className={navigationMenuTriggerStyle()}>
-                  Testimonials
-                </NavigationMenuLink>
-              </NavigationMenuItem>
-              <NavigationMenuItem>
-                <NavigationMenuLink as={Link} href="/faqs" className={navigationMenuTriggerStyle()}>
-                  FAQs
-                </NavigationMenuLink>
-              </NavigationMenuItem>
-              <NavigationMenuItem>
-                <NavigationMenuLink as={Link} href="/contacts" className={navigationMenuTriggerStyle()}>
-                  Contacts
-                </NavigationMenuLink>
-              </NavigationMenuItem>
-              <NavigationMenuItem>
-                <NavigationMenuLink as={Link} href="/signup" className={navigationMenuTriggerStyle()} style={{ color: '#F27405', borderRadius: '20px', backgroundColor: '#FFFFFF' }}>
-                  Sign Up
-                </NavigationMenuLink>
-              </NavigationMenuItem>
-            </NavigationMenuList>
-          </NavigationMenu>
+        <NavigationMenu>
+  <NavigationMenuList className="ms-auto hidden lg:flex">
+    <NavigationMenuItem>
+      <NavigationMenuLink href="/" className={navigationMenuTriggerStyle()}>
+        <Link href="/">Home</Link>
+      </NavigationMenuLink>
+    </NavigationMenuItem>
+    <NavigationMenuItem>
+      <NavigationMenuLink href="/about" className={navigationMenuTriggerStyle()}>
+        <Link href="/about">About</Link>
+      </NavigationMenuLink>
+    </NavigationMenuItem>
+    <NavigationMenuItem>
+      <NavigationMenuLink href="/features" className={navigationMenuTriggerStyle()}>
+        <Link href="/features">Features</Link>
+      </NavigationMenuLink>
+    </NavigationMenuItem>
+    <NavigationMenuItem>
+      <NavigationMenuLink href="/testimonials" className={navigationMenuTriggerStyle()}>
+        <Link href="/testimonials">Testimonials</Link>
+      </NavigationMenuLink>
+    </NavigationMenuItem>
+    <NavigationMenuItem>
+      <NavigationMenuLink href="/faqs" className={navigationMenuTriggerStyle()}>
+        <Link href="/faqs">FAQs</Link>
+      </NavigationMenuLink>
+    </NavigationMenuItem>
+    <NavigationMenuItem>
+      <NavigationMenuLink href="/contacts" className={navigationMenuTriggerStyle()}>
+        <Link href="/contacts">Contacts</Link>
+      </NavigationMenuLink>
+    </NavigationMenuItem>
+    <NavigationMenuItem>
+      <NavigationMenuLink href="/signup" className={navigationMenuTriggerStyle()} style={{ color: '#F27405', borderRadius: '20px', backgroundColor: '#FFFFFF' }}>
+        <Link href="/signup">Sign Up</Link>
+      </NavigationMenuLink>
+    </NavigationMenuItem>
+  </NavigationMenuList>
+</NavigationMenu>
+
         </div>
       </div>
       <div className="flex max-w-[1200px] absolute bottom-0 lg:relative w-full">
