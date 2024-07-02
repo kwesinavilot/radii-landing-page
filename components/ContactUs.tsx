@@ -12,11 +12,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { MdOutlineLocationOn } from "react-icons/md";
 import { AiOutlineMail } from "react-icons/ai";
 import {
-  Box,
   Center,
-  Flex,
-  Heading,
-  Link,
   Spinner,
   Text,
   Modal,
@@ -26,7 +22,9 @@ import {
   ModalCloseButton,
   ModalBody,
   ModalFooter,
-  useDisclosure
+  useDisclosure,
+  Flex,
+  Link,
 } from "@chakra-ui/react";
 import { FaLinkedin } from "react-icons/fa";
 import 'aos/dist/aos.css'; // Import AOS styles
@@ -45,13 +43,14 @@ function ContactUs() {
     });
   }, []);
 
-  function addToContacts(event) {
+  function addToContacts(event: React.FormEvent<HTMLFormElement>) {
     event.preventDefault();
     setIsSubmitting(true);
 
-    const email = event.target.email.value;
-    const phoneNumber = event.target.phonenumber.value;
-    const message = event.target.message.value;
+    const form = event.currentTarget;
+    const email = (form.elements.namedItem("email") as HTMLInputElement).value;
+    const phoneNumber = (form.elements.namedItem("phonenumber") as HTMLInputElement).value;
+    const message = (form.elements.namedItem("message") as HTMLTextAreaElement).value;
 
     // Email validation (basic check for format)
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
