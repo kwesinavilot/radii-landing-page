@@ -1,0 +1,20 @@
+.h1 {
+    font-family: 'Volkhov', serif;
+    font-size:60px;
+    color: #0A1117;
+}
+
+.p {
+    font-size: 16px;
+    font-family: 'Rubik', sans-serif;
+}
+
+.myContact {
+  display: flex;
+  align-items: center;
+}
+
+.myLocation {
+    display: flex;
+    align-items: center;
+}

@@ -1,0 +1,54 @@
+/* src/styles/WhoWeAre.module.css */
+.whoWeAreSection {
+    background-color: #F7F7F7;
+    padding-top: 119px;
+  }
+  
+  .middleStars {
+    width: 100px;
+    height: auto;
+    position: relative;
+    left: 750px;
+  }
+  
+  .content {
+    height: auto;
+    text-align: center;
+  }
+  
+
+  
+  .content span{
+    color: #F27405;
+    font-family: 'Rubik', sans-serif;
+    font-size:18px;
+  }
+
+  .content h1{
+    font-family: 'Volkhov', serif;
+    font-size:40px;
+    font-weight: bold;
+    color: #14183E;
+
+  }
+
+
+
+.card-description {
+  font-size: 16px;
+  font-family: 'Rubik', sans-serif;
+}
+
+
+
+.reccut {
+  display: 'flex';
+  justify-Content: 'center';
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  bottom: 70px;
+  z-index: 0;
+}
+

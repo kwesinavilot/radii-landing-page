@@ -1,0 +1,38 @@
+
+  /* CSS file */
+  @media (min-width: 768px) {
+    .pricing-section {
+      flex-direction: row;
+    }
+  }
+  
+  /* Pricing.module.css */
+
+.pricingSection {
+  height: auto;
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #f7f7f7;
+  padding-block: 10rem;
+}
+
+.pricingContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  max-width: 1200px;
+  /* margin: 120px auto 120px; */
+}
+
+@media (max-width: 768px) {
+  .pricingContainer {
+    flex-direction: column;
+  }
+}
