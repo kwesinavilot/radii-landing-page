@@ -2,8 +2,10 @@
 
 import Link from "next/link";
 import React, { useState } from "react";
-import { FaBars, FaTimes } from "react-icons/fa";
+import { FaBars, FaPlus, FaTimes } from "react-icons/fa";
 import Image from 'next/image';
+import { FaPhone } from 'react-icons/fa';
+
 
 const NavigationBar = () => {
     const [nav, setNav] = useState(false);
@@ -18,7 +20,7 @@ const NavigationBar = () => {
     ];
 
     return (
-        <div className="flex justify-between items-center w-full h-20 px-20 z-50 text-black bg-transparent nav">
+        <div className="flex justify-between items-center w-full h-20 px-36 z-50 text-black bg-transparent nav">
             <div>
                 <Image src="/images/LogoBlack.png" className='z-10 hidden md:flex' alt='urubytes logo' width={100} height={100}/>
             </div>
@@ -61,6 +63,14 @@ const NavigationBar = () => {
                     </li>
                 </ul>
             )}
+
+            {/* FAB Button */}
+            <a href="https://wa.link/j508ug" target="_blank" rel="noopener noreferrer">
+                <button className="fab fixed bottom-10 right-10 flex items-center p-4 rounded-full bg-[#F27405] text-white shadow-lg hover:bg-[#d96304] transition duration-300">
+                    <FaPhone size={24} className="mr-2" />
+                    <span className="text-lg">Talk To Us</span>
+                </button>
+            </a>
         </div>
     );
 };
