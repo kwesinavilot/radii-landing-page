@@ -26,7 +26,7 @@ export default function Home () {
       <HeroSection />
       <WhoWeAre />
       <Features />
-      <Image src={partnersImage} alt='Partners' className=''/>
+      {/* <Image src={partnersImage} alt='Partners' className=''/> */}
       <div className="hidden lg:block">
         <Pricing />
       </div>
