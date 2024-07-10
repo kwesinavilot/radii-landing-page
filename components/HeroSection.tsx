@@ -15,7 +15,7 @@ const HeroSection = () => {
           
           <div className="bg-white shadow-lg absolute left-0 lg:w-[40%] p-4 lg:ps-[8rem] rounded-ee-[1rem] rounded-se-[1rem]">
             <div className="flex gap-12">
-              <Button className="bg-[#F27405] text-white rounded-lg shadow-lg">Book a Call</Button>
+              <Button className="bg-[#F27405] text-white rounded-lg shadow-lg">Try It Now</Button>
               <div className="flex items-center gap-2">
                 <BsPlayCircle color="#F27405" size="2em" />
                 <p>Play Demo</p>
