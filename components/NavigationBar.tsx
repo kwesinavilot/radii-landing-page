@@ -22,7 +22,7 @@ const NavigationBar = () => {
     return (
         <div className="flex justify-between items-center w-full h-20 px-36 z-50 text-black bg-transparent nav">
             <div>
-                <Image src="/images/LogoBlack.png" className='z-10 hidden md:flex' alt='urubytes logo' width={100} height={100}/>
+                <Image src="/images/LogoBlack.png" className='z-10 hidden md:flex' alt='radii logo' width={100} height={100}/>
             </div>
 
             <ul className="hidden md:flex z-50">
