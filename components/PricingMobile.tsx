@@ -94,8 +94,8 @@ export function PricingMobile() {
       <br />
       <br />
       <div id="header" data-aos="fade-up" data-aos-duration="2000">
-        <p className=' text-center font-light py-10 text-sm'>Additional tokens may be purchsed for high frequency users (Contact sales for a custom plan)</p>
-        <br />
+        {/* <p className=' text-center font-light py-10 text-sm'>Additional tokens may be purchsed for high frequency users (Contact sales for a custom plan)</p>
+        <br /> */}
         <br />
       </div>
     </section>
