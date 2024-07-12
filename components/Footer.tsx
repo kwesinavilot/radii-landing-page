@@ -167,10 +167,10 @@ const Footer = () => {
             <Text mb={4} textAlign="center">
               In the meantime, you can engage with us on social media:
             </Text>
-            <Link href="https://www.linkedin.com/company/urubyte/" passHref>
+            <Link href="https://www.linkedin.com/company/radii/" passHref>
               <Flex as="a" alignItems="center" justifyContent="center">
                 <FaLinkedin />
-                <Text ml={2}>@urubytes</Text>
+                <Text ml={2}>@radii</Text>
               </Flex>
             </Link>
           </ModalBody>

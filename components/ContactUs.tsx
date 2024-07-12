@@ -179,11 +179,11 @@ function ContactUs() {
             <Text className=" text-sm text-center">
               In the meantime, you can engage with us on social media:
             </Text>
-            <Link href="https://www.linkedin.com/company/urubyte/" isExternal flex={1}>
+            <Link href="https://www.linkedin.com/company/radii/" isExternal flex={1}>
             <br />
             <Flex alignItems="center" justifyContent="center">
               <FaLinkedin />
-              <Text className="text-sm text-center">@urubytes</Text>
+              <Text className="text-sm text-center">@radii</Text>
             </Flex>
 
             </Link>
