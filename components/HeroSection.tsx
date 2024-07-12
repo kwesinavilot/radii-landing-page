@@ -9,9 +9,9 @@ const HeroSection = () => {
     <section className="lg:flex">
       <div className="flex flex-col lg:flex-row z-10 items-center relative lg:flex gap-4 lg:gap-0">
         <div className="lg:w-[50%] lg:px-32 mx-auto text-start lg:text-start px-4 py-10">
-          <p className="text-[#F27405] font-light">HELPING BUSINESSES THRIVE WITH DATA</p>
-          <h1 className="text-2xl mt-4 lg:text-6xl font-bold relative after:absolute after:content-[''] after:top-0 after:bg">Gain Insights,<br />Drive Growth</h1>
-          <p className="lg:my-8 my-2">Integrate all your data sources to unlock insights and drive strategic decisions that propel your business forward.</p>
+          <p className="text-[#F27405] font-light">UNLOCK YOUR BUSINESS POTENTIAL           </p>
+          <h1 className="text-2xl mt-4 lg:text-6xl font-bold relative after:absolute after:content-[''] after:top-0 after:bg">Eliminate Guesswork,<br />Drive Growth</h1>
+          <p className="lg:my-8 my-2">Stop relying on trial and error. Integrate all your data sources to unlock actionable insights and make strategic decisions that propel your business forward.</p>
           
           <div className="bg-white shadow-lg absolute left-0 lg:w-[40%] p-4 lg:ps-[8rem] rounded-ee-[1rem] rounded-se-[1rem]">
             <div className="flex gap-12">
