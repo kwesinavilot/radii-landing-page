@@ -189,7 +189,7 @@ const Footer = () => {
 
 export function SubFooter() {
   return (
-    <div className="w-full bg-gray-800 text-white py-4 text-center">
+    <div className="w-full text-white py-4 text-center">
       <p>© 2024 Radii. All rights reserved.</p>
     </div>
   );
