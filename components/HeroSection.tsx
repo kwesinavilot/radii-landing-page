@@ -8,7 +8,7 @@ import { useState } from 'react';
 const HeroSection = () => {
   const [herobutton, setButton] = useState(false);
   return (
-    <section className="lg:flex">
+    <section className="lg:flex py-20">
       <div className="flex flex-col lg:flex-row z-10 items-center relative lg:flex gap-4 lg:gap-0">
         <div className="lg:w-[50%] lg:px-32 mx-auto text-start lg:text-start px-4 py-10">
           <p className="text-[#F27405] font-light">UNLOCK YOUR BUSINESS POTENTIAL</p>
@@ -33,9 +33,9 @@ const HeroSection = () => {
               </div>
             </div>
           </div>
-          <div className="absolute lg:-left-14 -left-10 w-40 lg:w-full">
+          {/* <div className="absolute lg:-left-14 -left-10 w-40 lg:w-full">
             <Image src="/images/Arrow.png" alt='arrow' width={290} height={328}/>
-          </div>
+          </div> */}
         </div>
         <div className="-order-1 lg:order-2">
           <Image src="/images/Heero Image Circular.png" alt="Hero Image" width={712} height={712} />
