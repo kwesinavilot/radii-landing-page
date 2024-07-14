@@ -1,14 +1,14 @@
 "use client"
 
 import Link from "next/link";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { FaBars, FaPlus, FaTimes } from "react-icons/fa";
 import Image from 'next/image';
 import { FaPhone } from 'react-icons/fa';
 
-
 const NavigationBar = () => {
     const [nav, setNav] = useState(false);
+    const [scroll, setScroll] = useState(false);
 
     const links = [
         { id: 1, link: "Home" },
@@ -19,22 +19,37 @@ const NavigationBar = () => {
         { id: 6, link: "Contact Us" },
     ];
 
+    useEffect(() => {
+        const handleScroll = () => {
+            if (window.scrollY > 50) {
+                setScroll(true);
+            } else {
+                setScroll(false);
+            }
+        };
+
+        window.addEventListener('scroll', handleScroll);
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, []);
+
     return (
-        <div className="flex justify-between items-center w-full h-20 px-36 z-50 text-black bg-transparent nav">
+        <div className={`flex justify-between items-center w-full h-20 px-36 z-50 text-black fixed top-0 ${scroll ? 'bg-white shadow-md' : 'bg-transparent'}`}>
             <div>
-                <Image src="/images/LogoBlack.png" className='z-10 hidden md:flex' alt='radii logo' width={100} height={100}/>
+                <Image src="/images/LogoGreen.png" className='z-10 hidden md:flex' alt='radii logo' width={100} height={100} />
             </div>
 
             <ul className="hidden md:flex z-50">
                 {links.map(({ id, link }) => (
                     <li
                         key={id}
-                        className="nav-links px-4 cursor-pointer self-center font-medium text-black hover:scale-105 hover:text-white duration-200 link-underline"
+                        className="nav-links px-4 cursor-pointer self-center font-medium text-black hover:scale-105 hover:text-[#F27405] duration-200 link-underline"
                     >
                         <Link href={`#${link}`}>{link}</Link>
                     </li>
                 ))}
-                <li className="nav-links px-4 cursor-pointer capitalize font-medium bg-white rounded-xl text-[#F27405] py-2 hover:scale-105 hover:text-white duration-200 link-underline">
+                <li className="nav-links px-4 cursor-pointer capitalize font-medium bg-white rounded-xl text-[#F27405] py-2 hover:scale-105 hover:text-[#F27405] duration-200 link-underline">
                     <a href="https://signup.page" target="_blank" rel="noopener noreferrer">Sign up</a>
                 </li>
             </ul>
@@ -59,7 +74,7 @@ const NavigationBar = () => {
                         </li>
                     ))}
                     <li className="px-4 cursor-pointer capitalize py-3 text-xl bg-white text-[#F27405] rounded-2xl">
-                        <a onClick={() => setNav(!nav)} href="https://signup.page" target="_blank" rel="noopener noreferrer">Sign up</a>
+                        <a onClick={() => setNav(!nav)} href="https://app.getradii.com/" target="_blank" rel="noopener noreferrer">Sign In</a>
                     </li>
                 </ul>
             )}
