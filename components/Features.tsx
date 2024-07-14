@@ -29,9 +29,9 @@ const Features = () => {
         
       </div>
                     <h1 className='text-4xl lg:text-6xl font-bold my-4'>Why Choose Us</h1>
-                    <p>Radii empowers businesses with data-driven insights to make informed decisions and achieve strategic growth.</p>
+                    <p>Radii empowers businesses with data-driven insights to make <br />informed decisions and achieve strategic growth.</p>
                 </div>
-                <div className="md:w-1/2 my-10">
+                <div className="md:w-1/2 my-10 px-8">
                     <div className='border rounded-lg overflow-hidden shadow-lg p-3'
                         data-aos="zoom-in-up"
                         data-aos-easing="ease-out-cubic"
@@ -46,7 +46,8 @@ const Features = () => {
                             </div>
                         </div>
                     </div>
-                    <div className='overflow-hidden p-3'
+                    <br />
+                    <div className='border rounded-lg overflow-hidden shadow-lg p-3'
                         data-aos="zoom-in-up"
                         data-aos-easing="ease-out-cubic"
                         data-aos-duration="3000"
@@ -59,7 +60,8 @@ const Features = () => {
                             </div>
                         </div>
                     </div>
-                    <div className=''
+                    <br />
+                    <div className='border rounded-lg overflow-hidden shadow-lg p-3'
                         data-aos="zoom-in-up"
                         data-aos-easing="ease-out-cubic"
                         data-aos-duration="3000"
@@ -73,7 +75,8 @@ const Features = () => {
                             </div>
                         </div>
                     </div>
-                    <div className='overflow-hidden p-3'
+                    <br />
+                    <div className='border rounded-lg overflow-hidden shadow-lg p-3'
                         data-aos="zoom-in-up"
                         data-aos-easing="ease-out-cubic"
                         data-aos-duration="3000"
