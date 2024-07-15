@@ -173,7 +173,7 @@ const Pricing = () => {
           </PcardFooter>
         </Pcard>
       </div> */}
-      <div id="header" data-aos="zoom-out" data-aos-duration="2000">
+      <div id="header" data-aos="zoom-in" data-aos-duration="2000">
         <Image src="/images/price.png" alt="Hero Image" width={1440} height={1000} />
       </div>
       {/* <div id="header" data-aos="fade-up" data-aos-duration="2000">
