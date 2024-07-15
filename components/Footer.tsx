@@ -145,7 +145,7 @@ const Footer = () => {
               </NavigationMenuItem>
               <NavigationMenuItem>
                 <NavigationMenuLink href="/signup" className={navigationMenuTriggerStyle()} style={{ color: '#F27405', borderRadius: '20px', backgroundColor: '#FFFFFF' }}>
-                  <Link href="/signup">Sign Up</Link>
+                  <Link href="https://app.getradii.com/signin">Login</Link>
                 </NavigationMenuLink>
               </NavigationMenuItem>
             </NavigationMenuList>
