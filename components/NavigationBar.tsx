@@ -7,6 +7,13 @@ import Image from 'next/image';
 import { FaPhone } from 'react-icons/fa';
 
 const NavigationBar = () => {
+    const smoothScroll = (e, link) => {
+        e.preventDefault();
+        document.querySelector(link).scrollIntoView({
+            behavior: 'smooth'
+        });
+        setNav(false);
+    };
     const [nav, setNav] = useState(false);
     const [scroll, setScroll] = useState(false);
 
@@ -41,18 +48,18 @@ const NavigationBar = () => {
             </div>
 
             <ul className="hidden md:flex z-50">
-                {links.map(({ id, link }) => (
-                    <li
-                        key={id}
-                        className="nav-links px-4 cursor-pointer self-center font-medium text-black hover:scale-105 hover:text-[#F27405] duration-200 link-underline"
-                    >
-                        <Link href={`#${link}`}>{link}</Link>
-                    </li>
-                ))}
-                <li className="nav-links px-4 cursor-pointer capitalize font-medium bg-white rounded-xl text-[#F27405] py-2 hover:scale-105 hover:text-[#F27405] duration-200 link-underline">
-                    <a href="https://signup.page" target="_blank" rel="noopener noreferrer">Sign up</a>
-                </li>
-            </ul>
+    {links.map(({ id, link }) => (
+        <li
+            key={id}
+            className="nav-links px-4 cursor-pointer self-center font-medium text-black hover:scale-105 hover:text-[#F27405] duration-200 link-underline"
+        >
+            <a href={`#${link}`} onClick={(e) => smoothScroll(e, `#${link}`)}>{link}</a>
+        </li>
+    ))}
+    <li className="nav-links px-4 cursor-pointer capitalize font-medium bg-white rounded-xl text-[#F27405] py-2 hover:scale-105 hover:text-[#F27405] duration-200 link-underline">
+        <a href="https://signup.page" target="_blank" rel="noopener noreferrer">Sign up</a>
+    </li>
+</ul>
 
             <div
                 onClick={() => setNav(!nav)}
