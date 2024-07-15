@@ -63,7 +63,7 @@ export default function NavigationMenuDemo() {
         <NavigationMenuItem>
           <Link href="/docs" legacyBehavior passHref>
             <NavigationMenuLink className={`${navigationMenuTriggerStyle()} bg-transparent hover:bg-transparent bg-white`} style={{color: '#F27405', borderRadius: '20px'}}>
-              Sign Up
+              Sign In
             </NavigationMenuLink>
           </Link>
         </NavigationMenuItem> 
