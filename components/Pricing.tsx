@@ -182,11 +182,13 @@ const Pricing = () => {
         <br />
       // </div> */}  
       <div className="flex flex-col items-center">
+        <a href="https://wa.link/j508ug" target="_blank" rel="noopener noreferrer">
               <button style={{ border: '1px solid #F27405', borderRadius: '25px', color: '#F27405', fontWeight: 'bold', padding: '12px 80px', marginBottom: '10px' }} 
                       onMouseOver={(e) => { e.currentTarget.style.backgroundColor = '#F27405'; e.currentTarget.style.color = 'white'; }}
                       onMouseOut={(e) => { e.currentTarget.style.backgroundColor = 'transparent'; e.currentTarget.style.color = '#F27405'; }}>
                 Contact Sales
               </button>
+        </a>
       </div>
     </section>
   );
