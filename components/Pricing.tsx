@@ -29,11 +29,11 @@ const Pricing = () => {
         <br />
         <br />
       </div>
-      {/* <div className=" flex lg:flex-row flex-col lg:w-[1248px] w-full gap-5 justify-center items-center">
+      <div className=" flex lg:flex-row flex-col lg:w-[1248px] w-full gap-5 justify-center items-center">
         <Pcard className='flex flex-col p-5 lg:w-1/3 w-[83vw] shadow-lg justify-center items-center bg-white' 
                data-aos="flip-left" data-aos-duration="2000">
           <PcardHeader>
-            <PcardPreTitle>Lite</PcardPreTitle>
+            <PcardPreTitle>Freemium</PcardPreTitle>
             <PcardPreTitle2>Monthly Charge</PcardPreTitle2>
             <br />
             <div className="flex justify-center">
@@ -47,17 +47,17 @@ const Pricing = () => {
           <br />
           <PcardContent>
             <div className="flex flex-col items-center justify-center">
-              <p>Single Use</p>
+              <p>File Upload & Google drive(1 folder)</p>
               <br />
-              <p>Input: 1000 tokens</p>
+              <p>100 queries/month</p>
               <br />
-              <p>Output: 1000 tokens</p>
+              <p>5 views</p>
               <br />
-              <p>Local file integration</p>
+              <p>2 users</p>
               <br />
-              <p>Basic Visualization</p>
+              <p>Chat & Email support with a 24-hour response time</p>
               <br />
-              <p>50MB Storage</p>
+              <p>Up to 250 MB</p>
             </div>
           </PcardContent>
           <br />
@@ -81,10 +81,10 @@ const Pricing = () => {
         <Pcard className='flex flex-col p-5 lg:w-1/3 w-[83vw] shadow-lg justify-center items-center bg-white'
                data-aos="flip-left" data-aos-duration="2000">
           <PcardHeader>
-            <PcardPreTitle>Basic</PcardPreTitle>
+            <PcardPreTitle>Standard</PcardPreTitle>
             <PcardPreTitle2>Monthly Charge</PcardPreTitle2>
             <br />
-            <PcardTitle>$14.99</PcardTitle>
+            <PcardTitle>$25</PcardTitle>
           </PcardHeader>
           <br />
           <br />
@@ -93,17 +93,17 @@ const Pricing = () => {
           <br />
           <PcardContent>
             <div className="flex flex-col items-center justify-center">
-              <p>Single Use</p>
+              <p>Access to all supported data sources</p>
               <br />
-              <p>Input: 1 million tokens</p>
+              <p>1000 queries/month</p>
               <br />
-              <p>Output: 1 million tokens</p>
+              <p>50 views</p>
               <br />
-              <p>Advanced Visualization</p>
+              <p>15 users</p>
               <br />
-              <p>5GB Storage</p>
+              <p>Priority chat & email support with a 12-hour response time</p>
               <br />
-              <p>Workspace Integrations</p>
+              <p>Up to 50 GB</p>
             </div>
           </PcardContent>
           <br />
@@ -127,7 +127,8 @@ const Pricing = () => {
         <Pcard className='lg:h-[50rem] lg:w-1/3 w-[83vw] flex flex-col p-5 shadow-lg justify-center items-center bg-[#038C7F]'
                data-aos="flip-left" data-aos-duration="2000">
           <PcardHeader>
-            <PcardPreTitle style={{ color: '#ffffff' }}>Premium</PcardPreTitle>
+            <PcardPreTitle style={{ color: '#ffffff' }}>Enterprise
+            </PcardPreTitle>
             <PcardPreTitle2 style={{ color: '#ffffff' }}>Monthly Charge</PcardPreTitle2>
             <br />
             <PcardTitle style={{ color: '#ffffff' }}>$24.99</PcardTitle>
@@ -139,17 +140,18 @@ const Pricing = () => {
           <br />
           <PcardContent>
             <div className="flex flex-col items-center justify-center">
-              <p style={{ color: '#ffffff' }}>Single Use</p>
+              <p style={{ color: '#ffffff', flex:'display', justifyItems:'center', alignContent:'center'}}>Unlimited access to all supported data sources, including custom integrations</p>
               <br />
-              <p style={{ color: '#ffffff' }}>Input: 5 million tokens</p>
+              <p style={{ color: '#ffffff' }}>Unlimited queries</p>
               <br />
-              <p style={{ color: '#ffffff' }}>Output: 5 million tokens</p>
+              <p style={{ color: '#ffffff' }}>Unlimited</p>
               <br />
-              <p style={{ color: '#ffffff' }}>Advanced Visualization</p>
+              <p style={{ color: '#ffffff' }}>Unlimited users</p>
               <br />
-              <p style={{ color: '#ffffff' }}>20GB Storage</p>
+              <p style={{ color: '#ffffff' }}>Dedicated account manager and 24/7 support</p>
               <br />
-              <p style={{ color: '#ffffff' }}>Workspace Integrations</p>
+              <p style={{ color: '#ffffff' }}>15 GB (Custom storage solutions tailored to business needs)</p>
+              <br />
             </div>
           </PcardContent>
           <br />
@@ -170,15 +172,15 @@ const Pricing = () => {
             </div>
           </PcardFooter>
         </Pcard>
-      </div> */}
-      <div id="header" data-aos="zoom-out" data-aos-duration="2000">
+      </div>
+      {/* <div id="header" data-aos="zoom-out" data-aos-duration="2000">
         <Image src="/images/price.png" alt="Hero Image" width={1440} height={1000} />
       </div>
       <div id="header" data-aos="fade-up" data-aos-duration="2000">
         {/* <p className=' text-center font-light py-10 text-sm'>Additional tokens may be purchsed for high frequency users (Contact sales for a custom plan)</p> */}
+        {/* <br />
         <br />
-        <br />
-      </div>
+      // </div> */} 
       <div className="flex flex-col items-center">
               <button style={{ border: '1px solid #F27405', borderRadius: '25px', color: '#F27405', fontWeight: 'bold', padding: '12px 80px', marginBottom: '10px' }} 
                       onMouseOver={(e) => { e.currentTarget.style.backgroundColor = '#F27405'; e.currentTarget.style.color = 'white'; }}
