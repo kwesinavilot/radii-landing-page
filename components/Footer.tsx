@@ -64,8 +64,8 @@ const Footer = () => {
   };
 
   return (
-    <div className="relative bg-[#182632] h-[15rem] lg:h-[422px] lg:flex flex-col items-center justify-end">
-      <div className="lg:w-full lg:flex justify-center">
+    <div className="relative bg-[#182632] h-[15rem] lg:h-[422px] lg:flex flex-col items-center justify-center">
+      <div className="lg:w-full  justify-center">
         {/* <Image
           src="/images/footercut.png"
           alt="footercut"
@@ -73,13 +73,13 @@ const Footer = () => {
           height={311}
           className="lg:max-w-[1170.64px] lg:h-[311px] absolute lg:top-[-20%] left-[0.5rem] lg:left-[10.5rem] mx-auto"
         /> */}
-        <form className="absolute lg:top-[10%] top-[0] left-[0.5rem] lg:left-[35%] w-[80%] max-w-[500px] p-4" onSubmit={addToWaitlist}>
+        <form className="mx-auto max-w-[500px] p-4" onSubmit={addToWaitlist}>
           <div className="text-center font-bold text-white">
             <p className="lg:text-3xl text-center capitalize">Join our waitlist</p>
             <p className="text-[#9BCAB8] lg:my-4 font-light text-xs">Join and be part of our early testers</p>
           </div>
           <div className="flex items-center lg:gap-2 gap-3">
-            <div className="bg-white lg:w-[70%] lg:h-[44px] h-[24px] flex items-center rounded-r rounded-l p-4">
+            <div className="bg-white w-[70%] mx-auto my-2 lg:h-[44px] h-[24px] flex items-center rounded-r rounded-l p-4">
               {isSubmitting ? (
                 <Flex alignItems="center">
                   <Text ml={2}>Submitting...</Text>
@@ -108,10 +108,9 @@ const Footer = () => {
             </Button>
           </div>
         </form>
-        <div className='bg-white'>
-          <SeparatorLong />
+        <div className="bg-gray-600 h-[1px] lg:w-[1040px] mx-auto my-8">
         </div>
-        <div>
+        <div className='w-fit mx-auto'>
         <NavigationMenu>
             <NavigationMenuList className="ms-auto hidden lg:flex">
               <NavigationMenuItem>
