@@ -129,11 +129,11 @@ const Footer = () => {
                   <Link href="/features">Features</Link>
                 </NavigationMenuLink>
               </NavigationMenuItem>
-              {/* <NavigationMenuItem>
+              <NavigationMenuItem>
                 <NavigationMenuLink href="/testimonials" className={navigationMenuTriggerStyle()}>
-                  <Link href="/testimonials">Testimonials</Link>
+                  <Link href="/pricing">Pricing</Link>
                 </NavigationMenuLink>
-              </NavigationMenuItem> */}
+              </NavigationMenuItem>
               <NavigationMenuItem>
                 <NavigationMenuLink href="/faqs" className={navigationMenuTriggerStyle()}>
                   <Link href="/faqs">FAQs</Link>
