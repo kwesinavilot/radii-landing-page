@@ -25,6 +25,7 @@ import {
   navigationMenuTriggerStyle,
 } from '@/components/ui/navigation-menu';
 import { Separator } from '@/components/ui/separator';
+import { SeparatorLong } from './ui/seperatorlong';
 
 const Footer = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
@@ -65,14 +66,14 @@ const Footer = () => {
   return (
     <div className="relative bg-[#182632] h-[15rem] lg:h-[422px] lg:flex flex-col items-center justify-end">
       <div className="lg:w-full lg:flex justify-center">
-        <Image
+        {/* <Image
           src="/images/footercut.png"
           alt="footercut"
-          width={1170.64}
+          width={1070.64}
           height={311}
           className="lg:max-w-[1170.64px] lg:h-[311px] absolute lg:top-[-20%] left-[0.5rem] lg:left-[10.5rem] mx-auto"
-        />
-        <form className="absolute lg:top-[-5%] top-[0] left-[0.5rem] lg:left-[35%] w-[80%] max-w-[500px] p-4" onSubmit={addToWaitlist}>
+        /> */}
+        <form className="absolute lg:top-[10%] top-[0] left-[0.5rem] lg:left-[35%] w-[80%] max-w-[500px] p-4" onSubmit={addToWaitlist}>
           <div className="text-center font-bold text-white">
             <p className="lg:text-3xl text-center capitalize">Join our waitlist</p>
             <p className="text-[#9BCAB8] lg:my-4 font-light text-xs">Join and be part of our early testers</p>
@@ -107,49 +108,49 @@ const Footer = () => {
             </Button>
           </div>
         </form>
-        <div>
-          <Separator />
+        <div className='bg-white'>
+          <SeparatorLong />
         </div>
         <div>
         <NavigationMenu>
-  <NavigationMenuList className="ms-auto hidden lg:flex">
-    <NavigationMenuItem>
-      <NavigationMenuLink href="/" className={navigationMenuTriggerStyle()}>
-        <Link href="/">Home</Link>
-      </NavigationMenuLink>
-    </NavigationMenuItem>
-    <NavigationMenuItem>
-      <NavigationMenuLink href="/about" className={navigationMenuTriggerStyle()}>
-        <Link href="/about">About</Link>
-      </NavigationMenuLink>
-    </NavigationMenuItem>
-    <NavigationMenuItem>
-      <NavigationMenuLink href="/features" className={navigationMenuTriggerStyle()}>
-        <Link href="/features">Features</Link>
-      </NavigationMenuLink>
-    </NavigationMenuItem>
-    <NavigationMenuItem>
-      <NavigationMenuLink href="/testimonials" className={navigationMenuTriggerStyle()}>
-        <Link href="/testimonials">Testimonials</Link>
-      </NavigationMenuLink>
-    </NavigationMenuItem>
-    <NavigationMenuItem>
-      <NavigationMenuLink href="/faqs" className={navigationMenuTriggerStyle()}>
-        <Link href="/faqs">FAQs</Link>
-      </NavigationMenuLink>
-    </NavigationMenuItem>
-    <NavigationMenuItem>
-      <NavigationMenuLink href="/contacts" className={navigationMenuTriggerStyle()}>
-        <Link href="/contacts">Contacts</Link>
-      </NavigationMenuLink>
-    </NavigationMenuItem>
-    <NavigationMenuItem>
-      <NavigationMenuLink href="/signup" className={navigationMenuTriggerStyle()} style={{ color: '#F27405', borderRadius: '20px', backgroundColor: '#FFFFFF' }}>
-        <Link href="/signup">Sign Up</Link>
-      </NavigationMenuLink>
-    </NavigationMenuItem>
-  </NavigationMenuList>
-</NavigationMenu>
+            <NavigationMenuList className="ms-auto hidden lg:flex">
+              <NavigationMenuItem>
+                <NavigationMenuLink href="/" className={navigationMenuTriggerStyle()}>
+                  <Link href="/">Home</Link>
+                </NavigationMenuLink>
+              </NavigationMenuItem>
+              <NavigationMenuItem>
+                <NavigationMenuLink href="/about" className={navigationMenuTriggerStyle()}>
+                  <Link href="/about">About</Link>
+                </NavigationMenuLink>
+              </NavigationMenuItem>
+              <NavigationMenuItem>
+                <NavigationMenuLink href="/features" className={navigationMenuTriggerStyle()}>
+                  <Link href="/features">Features</Link>
+                </NavigationMenuLink>
+              </NavigationMenuItem>
+              {/* <NavigationMenuItem>
+                <NavigationMenuLink href="/testimonials" className={navigationMenuTriggerStyle()}>
+                  <Link href="/testimonials">Testimonials</Link>
+                </NavigationMenuLink>
+              </NavigationMenuItem> */}
+              <NavigationMenuItem>
+                <NavigationMenuLink href="/faqs" className={navigationMenuTriggerStyle()}>
+                  <Link href="/faqs">FAQs</Link>
+                </NavigationMenuLink>
+              </NavigationMenuItem>
+              <NavigationMenuItem>
+                <NavigationMenuLink href="/contacts" className={navigationMenuTriggerStyle()}>
+                  <Link href="/contacts">Contacts</Link>
+                </NavigationMenuLink>
+              </NavigationMenuItem>
+              <NavigationMenuItem>
+                <NavigationMenuLink href="/signup" className={navigationMenuTriggerStyle()} style={{ color: '#F27405', borderRadius: '20px', backgroundColor: '#FFFFFF' }}>
+                  <Link href="/signup">Sign Up</Link>
+                </NavigationMenuLink>
+              </NavigationMenuItem>
+            </NavigationMenuList>
+          </NavigationMenu>
 
         </div>
       </div>
