@@ -21,7 +21,7 @@ const NavigationBar = () => {
         { id: 1, link: "Home" },
         { id: 2, link: "About" },
         { id: 3, link: "Features" },
-        { id: 4, link: "Testimonials" },
+        { id: 4, link: "Pricing" },
         { id: 5, link: "FAQs" },
         { id: 6, link: "Contact Us" },
     ];
@@ -42,12 +42,12 @@ const NavigationBar = () => {
     }, []);
 
     return (
-        <div className={`flex justify-between items-center w-full h-20 px-36 z-50 text-black fixed top-0 ${scroll ? 'bg-white shadow-md' : 'bg-transparent'}`}>
+        <div className={`flex w-full px-[9vw] justify-between items-center h-20 z-50 text-black fixed top-0 ${scroll ? 'bg-white shadow-md' : 'bg-transparent'}`}>
             <div>
                 <Image src="/images/LogoGreen.png" className='z-10 hidden md:flex' alt='radii logo' width={100} height={100} />
             </div>
 
-            <ul className="hidden md:flex z-50">
+            <ul className="hidden md:flex z-50 ms-auto">
     {links.map(({ id, link }) => (
         <li
             key={id}
@@ -65,7 +65,7 @@ const NavigationBar = () => {
                 onClick={() => setNav(!nav)}
                 className="cursor-pointer pr-4 z-50 text-black md:hidden"
             >
-                {nav ? <FaTimes className="fixed right-10 top-10" size={30} /> : <FaBars size={30} />}
+                {nav ? <FaTimes className="fixed right-10 top-5" size={30} /> : <FaBars size={30} className="fixed right-10 top-5"/>}
             </div>
 
             {nav && (
