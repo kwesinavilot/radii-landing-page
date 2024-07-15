@@ -38,7 +38,7 @@ const HeroSection = () => {
           </div> */}
         </div>
         <div className="-order-1 lg:order-2">
-          <Image src="/images/Heero Image Circular.png" alt="Hero Image" width={712} height={712} />
+          <Image src="/images/HeroCircular.png" alt="Hero Image" width={712} height={712} />
           <Image className={`${styles.theImage} absolute right-0 top-32`} src="/images/laptop_mockup2.png" alt="Laptop Image" width={712} height={712} />
         </div>
       </div>
