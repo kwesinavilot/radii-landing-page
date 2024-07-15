@@ -20,7 +20,7 @@ export default function Home () {
     <div className='relative lg:px-0'>
             <Image src="/images/uppercut.png" alt="Uppercut" className="absolute top-0 right-0" width={958} height={733} />
       <div className='flex items-center'>
-        <Image src="/images/logoBlack.png" className='z-10 fixed top-5 left-10 lg:hidden' alt='radii logo' width={50} height={50} />
+        <Image src="/images/logoBlack.png" className='z-10 fixed top-5 left-10 hidden' alt='radii logo' width={50} height={50} />
         <NavigationBar/>
       </div>
       <HeroSection />
