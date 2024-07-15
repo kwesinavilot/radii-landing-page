@@ -9,7 +9,7 @@ const HeroSection = () => {
   const [herobutton, setButton] = useState(false);
   return (
     <section className="lg:flex py-20">
-      <div className="flex flex-col lg:flex-row z-10 items-center relative lg:flex gap-4 lg:gap-0 top-20 pr-20">
+      <div className="flex flex-col lg:flex-row z-10 items-center relative lg:flex gap-4 lg:gap-0 top-10 ">
         <div className="lg:w-[50%] lg:px-32 mx-auto text-start lg:text-start px-4 py-10">
           <p className="text-[#F27405] font-light">UNLOCK YOUR BUSINESS POTENTIAL</p>
           <h1 className="text-2xl mt-4 lg:text-6xl font-bold relative after:absolute after:content-[''] after:top-0 after:bg">Eliminate Guesswork,<br />Drive Growth</h1>
@@ -38,8 +38,8 @@ const HeroSection = () => {
           </div> */}
         </div>
         <div className="-order-1 lg:order-2">
-          <Image src="/images/HeroCircular.png" alt="Hero Image" width={650} height={650} />
-          <Image className={`${styles.theImage} absolute top-32`} src="/images/laptop_mockup2.png" alt="Laptop Image" width={712} height={712} />
+          <Image src="/images/HeroImg.png" alt="Hero Image" width={712} height={712} />
+          {/* <Image className={`${styles.theImage} absolute top-32`} src="/images/laptop_mockup2.png" alt="Laptop Image" width={712} height={712} /> */}
         </div>
       </div>
     </section>
