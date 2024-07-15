@@ -44,7 +44,7 @@ const NavigationBar = () => {
     return (
         <div className={`flex w-full px-[9vw] justify-between items-center h-20 z-50 text-black fixed top-0 ${scroll ? 'bg-white shadow-md' : 'bg-transparent'}`}>
             <div>
-                <Image src="/images/LogoGreen.png" className='z-10 hidden md:flex' alt='radii logo' width={100} height={100} />
+                <Image src="/images/LogoGreen.png" className='z-10 flex' alt='radii logo' width={100} height={100} />
             </div>
 
             <ul className="hidden md:flex z-50 ms-auto">
@@ -57,7 +57,7 @@ const NavigationBar = () => {
         </li>
     ))}
     <li className="nav-links px-4 cursor-pointer capitalize font-medium bg-white rounded-xl text-[#F27405] py-2 hover:scale-105 hover:text-[#F27405] duration-200 link-underline">
-        <a href="https://signup.page" target="_blank" rel="noopener noreferrer">Sign up</a>
+        <a href="https://app.getradii.com/signin" target="_blank" rel="noopener noreferrer">Sign In</a>
     </li>
 </ul>
 
