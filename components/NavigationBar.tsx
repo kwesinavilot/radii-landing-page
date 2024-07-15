@@ -73,7 +73,7 @@ const NavigationBar = () => {
                             </Link>
                         </li>
                     ))}
-                    <li className="px-4 cursor-pointer capitalize py-3 text-xl bg-white text-[#F27405] rounded-2xl">
+                    <li className="px-4 cursor-pointer capitalize py-3 text-xl bg-[#F27405] text-white rounded-2xl">
                         <a onClick={() => setNav(!nav)} href="https://app.getradii.com/" target="_blank" rel="noopener noreferrer">Sign In</a>
                     </li>
                 </ul>
