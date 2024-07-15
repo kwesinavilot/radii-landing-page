@@ -29,7 +29,7 @@ const Pricing = () => {
         <br />
         <br />
       </div>
-      <div className=" flex lg:flex-row flex-col lg:w-[1248px] w-full gap-5 justify-center items-center">
+      {/* <div className=" flex lg:flex-row flex-col lg:w-[1248px] w-full gap-5 justify-center items-center">
         <Pcard className='flex flex-col p-5 lg:w-1/3 w-[83vw] shadow-lg justify-center items-center bg-white' 
                data-aos="flip-left" data-aos-duration="2000">
           <PcardHeader>
@@ -172,15 +172,15 @@ const Pricing = () => {
             </div>
           </PcardFooter>
         </Pcard>
-      </div>
-      {/* <div id="header" data-aos="zoom-out" data-aos-duration="2000">
+      </div> */}
+      <div id="header" data-aos="zoom-out" data-aos-duration="2000">
         <Image src="/images/price.png" alt="Hero Image" width={1440} height={1000} />
       </div>
-      <div id="header" data-aos="fade-up" data-aos-duration="2000">
+      {/* <div id="header" data-aos="fade-up" data-aos-duration="2000">
         {/* <p className=' text-center font-light py-10 text-sm'>Additional tokens may be purchsed for high frequency users (Contact sales for a custom plan)</p> */}
         {/* <br />
         <br />
-      // </div> */} 
+      // </div> */}  
       <div className="flex flex-col items-center">
               <button style={{ border: '1px solid #F27405', borderRadius: '25px', color: '#F27405', fontWeight: 'bold', padding: '12px 80px', marginBottom: '10px' }} 
                       onMouseOver={(e) => { e.currentTarget.style.backgroundColor = '#F27405'; e.currentTarget.style.color = 'white'; }}
