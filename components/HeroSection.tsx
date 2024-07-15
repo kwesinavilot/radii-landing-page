@@ -28,8 +28,16 @@ const HeroSection = () => {
               </a>
 
               <div className="flex items-center gap-2">
-                <BsPlayCircle color="#F27405" size="2em" />
-                <p>Play Demo</p>
+              <BsPlayCircle color="#F27405" size="2em" />
+              <a
+                onClick={() => setButton(!herobutton)}
+                href="https://youtu.be/ihEpnzgt_Yc"
+                target="_blank"
+                rel="noopener noreferrer"
+                className=''
+              >
+                Play Demo
+              </a>
               </div>
             </div>
           </div>
