@@ -1,19 +1,19 @@
-"use client"
+"use client";
 
 import Link from "next/link";
 import React, { useState, useEffect } from "react";
-import { FaBars, FaPlus, FaTimes } from "react-icons/fa";
+import { FaBars, FaPlus, FaTimes, FaPhone } from "react-icons/fa";
 import Image from 'next/image';
-import { FaPhone } from 'react-icons/fa';
 
-const NavigationBar = () => {
-    const smoothScroll = (e, link) => {
+const NavigationBar: React.FC = () => {
+    const smoothScroll = (e: React.MouseEvent<HTMLAnchorElement, MouseEvent>, link: string) => {
         e.preventDefault();
-        document.querySelector(link).scrollIntoView({
+        document.querySelector(link)?.scrollIntoView({
             behavior: 'smooth'
         });
         setNav(false);
     };
+
     const [nav, setNav] = useState(false);
     const [scroll, setScroll] = useState(false);
 
@@ -48,24 +48,24 @@ const NavigationBar = () => {
             </div>
 
             <ul className="hidden md:flex z-50 ms-auto">
-    {links.map(({ id, link }) => (
-        <li
-            key={id}
-            className="nav-links px-4 cursor-pointer self-center font-medium text-black hover:scale-105 hover:text-[#F27405] duration-200 link-underline"
-        >
-            <a href={`#${link}`} onClick={(e) => smoothScroll(e, `#${link}`)}>{link}</a>
-        </li>
-    ))}
-    <li className="nav-links px-4 cursor-pointer capitalize font-medium bg-white rounded-xl text-[#F27405] py-2 hover:scale-105 hover:text-[#F27405] duration-200 link-underline">
-        <a href="https://app.getradii.com/signin" target="_blank" rel="noopener noreferrer">Sign In</a>
-    </li>
-</ul>
+                {links.map(({ id, link }) => (
+                    <li
+                        key={id}
+                        className="nav-links px-4 cursor-pointer self-center font-medium text-black hover:scale-105 hover:text-[#F27405] duration-200 link-underline"
+                    >
+                        <a href={`#${link}`} onClick={(e) => smoothScroll(e, `#${link}`)}>{link}</a>
+                    </li>
+                ))}
+                <li className="nav-links px-4 cursor-pointer capitalize font-medium bg-white rounded-xl text-[#F27405] py-2 hover:scale-105 hover:text-[#F27405] duration-200 link-underline">
+                    <a href="https://app.getradii.com/signin" target="_blank" rel="noopener noreferrer">Sign In</a>
+                </li>
+            </ul>
 
             <div
                 onClick={() => setNav(!nav)}
                 className="cursor-pointer pr-4 z-50 text-black md:hidden"
             >
-                {nav ? <FaTimes className="fixed right-10 top-5" size={30} /> : <FaBars size={30} className="fixed right-10 top-5"/>}
+                {nav ? <FaTimes className="fixed right-10 top-5" size={30} /> : <FaBars size={30} className="fixed right-10 top-5" />}
             </div>
 
             {nav && (
@@ -75,9 +75,7 @@ const NavigationBar = () => {
                             key={id}
                             className="px-4 cursor-pointer py-6 text-xl"
                         >
-                            <Link onClick={() => setNav(!nav)} href={`#${link}`}>
-                                {link}
-                            </Link>
+                            <a href={`#${link}`} onClick={(e) => smoothScroll(e, `#${link}`)}>{link}</a>
                         </li>
                     ))}
                     <li className="px-4 cursor-pointer capitalize py-3 text-xl bg-[#F27405] text-white rounded-2xl">
