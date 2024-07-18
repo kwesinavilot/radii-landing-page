@@ -41,6 +41,7 @@ const NavigationBar: React.FC = () => {
         };
     }, []);
 
+
     return (
         <div className={`flex w-full px-[9vw] justify-between items-center h-20 z-50 text-black fixed top-0 ${scroll ? 'bg-white shadow-md' : 'bg-transparent'}`}>
             <div>
