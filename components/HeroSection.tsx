@@ -4,6 +4,7 @@ import { BsPlayCircle } from "react-icons/bs";
 import { Card } from 'react-bootstrap'; // or your preferred library
 import { Button } from './ui/button';
 import { useState } from 'react';
+import Link from 'next/link'
 
 const HeroSection = () => {
   const [herobutton, setButton] = useState(false);
@@ -17,27 +18,24 @@ const HeroSection = () => {
           
           <div className="bg-white shadow-lg absolute left-0 lg:w-[40%] p-4 lg:ps-[8rem] rounded-ee-[1rem] rounded-se-[1rem]">
             <div className="flex gap-12">
-              <a
-                onClick={() => setButton(!herobutton)}
+            <Link 
+            onClick={() => setButton(!herobutton)}
                 href="https://app.getradii.com/signup"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-[#F27405] text-white px-4 cursor-pointer py-2 text-l rounded-xl"
-              >
-                Try It Now
-              </a>
-
+                className="bg-[#F27405] text-white px-4 cursor-pointer py-2 text-l rounded-xl">Try It Now</Link>
               <div className="flex items-center gap-2">
               <BsPlayCircle color="#F27405" size="2em" />
-              <a
-                onClick={() => setButton(!herobutton)}
-                href="https://youtu.be/ihEpnzgt_Yc"
-                target="_blank"
-                rel="noopener noreferrer"
-                className=''
+              <Link
+              onClick={() => setButton(!herobutton)}
+              href="https://youtu.be/ihEpnzgt_Yc"
+              target="_blank"
+              rel="noopener noreferrer"
+              className=''
               >
                 Play Demo
-              </a>
+              </Link>
+              
               </div>
             </div>
           </div>
