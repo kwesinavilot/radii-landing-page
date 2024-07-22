@@ -24,7 +24,7 @@ const Features = () => {
                     className="flex flex-col justify-center md:w-1/2 text-center lg:text-start"
                 >
                     <div id="header" data-aos="fade-up" data-aos-duration="2000">
-        <p className='text-[#F27405] text-start font-light pt-12'>OUR FEATURE</p>
+        <p className='text-[#F27405] text-start font-light pt-12'>FEATURE</p>
         <br />
         
       </div>
