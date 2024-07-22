@@ -110,15 +110,16 @@ const Footer = () => {
         </form>
         <div className="bg-gray-600 h-[1px] lg:w-[1040px] mx-auto my-8">
         </div>
-        {/* <div className='w-fit mx-auto'>
+        <div className='w-fit mx-auto'>
         <NavigationMenu>
             <NavigationMenuList className="ms-auto hidden lg:flex">
-              <NavigationMenuItem>
-                <NavigationMenuLink href="/" className={navigationMenuTriggerStyle()}>
-                  <Link href="/">Home</Link>
-                </NavigationMenuLink>
-              </NavigationMenuItem>
-              <NavigationMenuItem>
+            <NavigationMenuItem>
+              <NavigationMenuLink href="/privacy-policy" target='_blank' className={navigationMenuTriggerStyle()}>
+                Privacy Policy
+              </NavigationMenuLink>
+            </NavigationMenuItem>
+
+              {/* <NavigationMenuItem>
                 <NavigationMenuLink href="/about" className={navigationMenuTriggerStyle()}>
                   <Link href="/about">About</Link>
                 </NavigationMenuLink>
@@ -147,11 +148,11 @@ const Footer = () => {
                 <NavigationMenuLink href="/signup" className={navigationMenuTriggerStyle()} style={{ color: '#F27405', borderRadius: '20px', backgroundColor: '#FFFFFF' }}>
                   <Link href="https://app.getradii.com/signin">Login</Link>
                 </NavigationMenuLink>
-              </NavigationMenuItem>
+              </NavigationMenuItem> */}
             </NavigationMenuList>
           </NavigationMenu>
 
-        </div> */}
+        </div>
       </div>
       <div className="flex max-w-[1200px] absolute bottom-0 lg:relative w-full">
         <SubFooter />
