@@ -110,7 +110,7 @@ const Footer = () => {
         </form>
         <div className="bg-gray-600 h-[1px] lg:w-[1040px] mx-auto my-8">
         </div>
-        <div className='w-fit mx-auto'>
+        {/* <div className='w-fit mx-auto'>
         <NavigationMenu>
             <NavigationMenuList className="ms-auto hidden lg:flex">
               <NavigationMenuItem>
@@ -151,7 +151,7 @@ const Footer = () => {
             </NavigationMenuList>
           </NavigationMenu>
 
-        </div>
+        </div> */}
       </div>
       <div className="flex max-w-[1200px] absolute bottom-0 lg:relative w-full">
         <SubFooter />
