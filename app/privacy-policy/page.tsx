@@ -7,6 +7,7 @@ import Link from "next/link";
 const PrivacyPolicy = () => {
   return (
     <div className='my-4 mx-10'>
+      <br /><br />
         <Link href="/">
          <Button className= {`lg:h-[44px] h-[32px] lg:p-4 p-2 rounded-l rounded-r bg-[#F27405] hover:bg-[#F27405]`}>
             Back to Home
