@@ -4,33 +4,37 @@
 import React from 'react';
 import { Button } from '../../components/ui/button';
 import Link from "next/link";
+import { FaArrowLeft } from 'react-icons/fa';
+
 const PrivacyPolicy = () => {
+  
   return (
-    <div className='my-4 mx-10'>
+    <div className='my-4 mx-10 font-rubik'>
       <br /><br />
-        <Link href="/">
-         <Button className= {`lg:h-[44px] h-[32px] lg:p-4 p-2 rounded-l rounded-r bg-[#F27405] hover:bg-[#F27405]`}>
-            Back to Home
-          </Button>
-        </Link>
+      <Link href="/">
+        <Button className={`lg:h-[44px] h-[32px] lg:p-4 p-2 rounded-l rounded-r bg-[#F27405] hover:bg-[#F27405] flex items-center`}>
+          <FaArrowLeft className="mr-2" />
+          Back to Home
+        </Button>
+      </Link>
         <br /><br /><br /><br />
-      <p className='text-6xl lg:text-4xl text-center font-bold'>Privacy Policy</p><br />
-      <p className='text-l lg:text-sm font-regular'>We at Radii know you care about how your personal information is used and shared, and we take your privacy seriously. Please read the following to learn more about our Privacy Policy.
+      <p className='text-6xl lg:text-4xl text-center font-bold font-rubik'>Privacy Policy</p><br />
+      <p className='text-l lg:text-sm font-regular font-rubik'>We at Radii know you care about how your personal information is used and shared, and we take your privacy seriously. Please read the following to learn more about our Privacy Policy.
 
         By using or accessing our products, services or website (collectively, “Services”) in any manner, you acknowledge that you accept the practices and policies outlined in this Privacy Policy, and you hereby consent that we will collect, use, and share your information in the following ways.
 
         Remember that your use of Company’s Services is at all times subject to the Terms and Conditions, which incorporates this Privacy Policy. Any terms we use in this Policy without defining them have the definitions given to them in the Terms and Conditions. <br /> <br />
 
-        <p className='text-l lg:text-l font-bold'>What does this Privacy Policy cover?</p>
+        <p className='text-l lg:text-l font-bold font-rubik'>What does this Privacy Policy cover?</p>
         
 
         This Privacy Policy covers our treatment of personally identifiable information ("Personal Information") that we gather when you are accessing or using our Services, but not to the practices of companies we don’t own or control, or people that we don’t manage. We gather various types of Personal Information from our users, as explained in more detail below, and we use this Personal Information internally in connection with our Services, including to personalize, provide, and improve our services, to allow you to set up a user account and profile, to contact you and allow other users to contact you, to fulfill your requests for certain products and services, and to analyze how you use the Services. In certain cases, we may also share some Personal Information with third parties, but only as described below.<br /><br />
 
-        <p className='text-l lg:text-l font-bold'>Will Company ever change this Privacy Policy?</p>
+        <p className='text-l lg:text-l font-bold font-rubik'>Will Company ever change this Privacy Policy?</p>
 
         We’re constantly trying to improve our Services, so we may need to change this Privacy Policy from time to time as well, but we will alert you to changes by placing a notice on getradii.com , by sending you an email, and/or by some other means. Please note that if you’ve opted not to receive legal notice emails from us (or you haven’t provided us with your email address), those legal notices will still govern your use of the Services, and you are still responsible for reading and understanding them. If you use the Services after any changes to the Privacy Policy have been posted, that means you agree to all of the changes.<br /><br />
 
-        <p className='text-l lg:text-l font-bold'>What Information does the Company Collect?</p>
+        <p className='text-l lg:text-l font-bold font-rubik'>What Information does the Company Collect?</p>
 
         Information You Provide to Us:<br />
 
@@ -50,7 +54,7 @@ const PrivacyPolicy = () => {
 
         Through cookies we place on your browser or device, we may collect information about your online activity after you leave our Services. Just like any other usage information we collect, this information allows us to improve the Services and customize your online experience, and otherwise as described in this Privacy Policy. Your browser may offer you a “Do Not Track” option, which allows you to signal to operators of websites and web applications and services (including behavioral advertising services) that you do not wish such operators to track certain of your online activities over time and across different websites. Our Services do not support Do Not Track requests at this time, which means that we collect information about your online activity both while you are using the Services and after you leave our Services.<br /><br />
 
-        <p className='text-l lg:text-l font-bold'>Will Company Share Any of the Personal Information it Receives?</p>
+        <p className='text-l lg:text-l font-bold font-rubik'>Will Company Share Any of the Personal Information it Receives?</p>
         
 
         We do not rent or sell your Personal Information in personally identifiable form to anyone. We do not view, sell or collect any data related to our Services that we have not been granted access to. We may share your Personal Information with third parties as described in this section:
@@ -69,14 +73,14 @@ const PrivacyPolicy = () => {
 
         Protection of Company and Others: We reserve the right to access, read, preserve, and disclose any information that we believe is necessary to comply with law or court order; enforce or apply our Terms and Conditions and other agreements; or protect the rights, property, or safety of Company, our employees, our users, or others.<br /><br />
 
-        <p className='text-l lg:text-l font-bold'>Is Personal Information about me secure?</p>
+        <p className='text-l lg:text-l font-bold font-rubik'>Is Personal Information about me secure?</p>
         
 
         Your account is protected by a password for your privacy and security. You must prevent unauthorized access to your account and Personal Information by selecting and protecting your password appropriately and limiting access to your computer or device and browser by signing off after you have finished accessing your account.<br /><br />
 
         We endeavour to protect the privacy of your account and other Personal Information we hold in our records, but unfortunately, we cannot guarantee complete security. Unauthorized entry or use, hardware or software failure, and other factors, may compromise the security of user information at any time.<br /><br />
 
-        <p className='text-l lg:text-l font-bold'>What Personal Information can I access?</p>
+        <p className='text-l lg:text-l font-bold font-rubik'>What Personal Information can I access?</p>
         
 
         You may access, and, in some cases, edit or delete the following information you’ve provided to us:<br />
@@ -87,7 +91,7 @@ const PrivacyPolicy = () => {
 
         The information you can view, update, and delete may change as the Services change. If you have any questions about viewing or updating information we have on file about you, please contact us at mogbi@getradii.com<br /><br />
 
-        <p className='text-l lg:text-l font-bold'>What choices do I have?</p>
+        <p className='text-l lg:text-l font-bold font-rubik'>What choices do I have?</p>
         
 
         You can always opt not to disclose information to us, but keep in mind some information may be needed to register with us or to take advantage of some of our features.
@@ -96,7 +100,7 @@ const PrivacyPolicy = () => {
 
         Radii does not sell or rent any of your personal information to third parties including that of minors under the age of sixteen (16). While Radii does not consider the use of advertising cookies on our site as a sale, you have the right to opt out of it.<br /><br />
 
-        <p className='text-l lg:text-l font-bold'>What if I have questions about this policy?</p>
+        <p className='text-l lg:text-l font-bold font-rubik'>What if I have questions about this policy?</p>
         
 
         If you have any questions or concerns regarding our privacy policies, please send us a detailed message to mogbi@getradii.com, and we will try to resolve your concerns.
