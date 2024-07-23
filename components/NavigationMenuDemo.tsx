@@ -16,18 +16,18 @@ import {
 
 export default function NavigationMenuDemo() {
   return (
-    <NavigationMenu className="ms-auto hidden lg:flex">
+    <NavigationMenu className="ms-auto hidden lg:flex font-rubik">
       <NavigationMenuList>
         <NavigationMenuItem>
           <Link href="/docs" legacyBehavior passHref>
-            <NavigationMenuLink className={`${navigationMenuTriggerStyle()} bg-transparent hover:bg-transparent`}>
+            <NavigationMenuLink className={`${navigationMenuTriggerStyle()} bg-transparent hover:bg-transparent font-rubik`}>
               Home
             </NavigationMenuLink>
           </Link>
         </NavigationMenuItem>
         <NavigationMenuItem>
           <Link href="/docs" legacyBehavior passHref>
-            <NavigationMenuLink className={`${navigationMenuTriggerStyle()} bg-transparent hover:bg-transparent`}>
+            <NavigationMenuLink className={`${navigationMenuTriggerStyle()} bg-transparent hover:bg-transparent font-rubik`}>
               About
             </NavigationMenuLink>
           </Link>
@@ -62,7 +62,7 @@ export default function NavigationMenuDemo() {
         </NavigationMenuItem>
         <NavigationMenuItem>
           <Link href="/docs" legacyBehavior passHref>
-            <NavigationMenuLink className={`${navigationMenuTriggerStyle()} bg-transparent hover:bg-transparent bg-white`} style={{color: '#F27405', borderRadius: '20px'}}>
+            <NavigationMenuLink className={`${navigationMenuTriggerStyle()} bg-transparent hover:bg-transparent bg-[#F27405]`} style={{color: '#F27405', borderRadius: '20px'}}>
               Login
             </NavigationMenuLink>
           </Link>

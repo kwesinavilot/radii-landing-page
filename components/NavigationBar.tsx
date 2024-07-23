@@ -52,13 +52,13 @@ const NavigationBar: React.FC = () => {
                 {links.map(({ id, link }) => (
                     <li
                         key={id}
-                        className="nav-links px-4 cursor-pointer self-center font-medium text-black hover:scale-105 hover:text-[#F27405] duration-200 link-underline"
+                        className="font-rubik nav-links px-4 cursor-pointer self-center font-medium text-black hover:scale-105 hover:text-[#F27405] duration-200 link-underline"
                     >
                         <a href={`#${link}`} onClick={(e) => smoothScroll(e, `#${link}`)}>{link}</a>
                     </li>
                 ))}
-                <li className="nav-links px-4 cursor-pointer capitalize font-medium bg-white rounded-xl text-[#F27405] py-2 hover:scale-105 hover:text-[#F27405] duration-200 link-underline">
-                    <a href="https://app.getradii.com/signin" target="_blank" rel="noopener noreferrer">Sign In</a>
+                <li className="nav-links px-4 cursor-pointer capitalize font-medium bg-[#F27405] rounded-xl text-[#ffffff] py-2 hover:scale-105 hover:text-[#F27405] duration-200 link-underline">
+                    <a className='font-rubik ' href="https://app.getradii.com/signin" target="_blank" rel="noopener noreferrer">Sign In</a>
                 </li>
             </ul>
 
@@ -74,13 +74,13 @@ const NavigationBar: React.FC = () => {
                     {links.map(({ id, link }) => (
                         <li
                             key={id}
-                            className="px-4 cursor-pointer py-6 text-xl"
+                            className="px-4 cursor-pointer py-6 text-xl font-rubik"
                         >
                             <a href={`#${link}`} onClick={(e) => smoothScroll(e, `#${link}`)}>{link}</a>
                         </li>
                     ))}
-                    <li className="px-4 cursor-pointer capitalize py-3 text-xl bg-[#F27405] text-white rounded-2xl">
-                        <a onClick={() => setNav(!nav)} href="https://app.getradii.com/" target="_blank" rel="noopener noreferrer">Sign In</a>
+                    <li className="font-rubik px-4 cursor-pointer capitalize py-3 text-xl bg-[#F27405] text-white rounded-2xl">
+                        <a className='font-rubik' onClick={() => setNav(!nav)} href="https://app.getradii.com/" target="_blank" rel="noopener noreferrer">Sign In</a>
                     </li>
                 </ul>
             )}
@@ -89,7 +89,7 @@ const NavigationBar: React.FC = () => {
             <a href="https://wa.link/j508ug" target="_blank" rel="noopener noreferrer">
                 <button className="fab fixed bottom-10 right-10 flex items-center p-4 rounded-full bg-[#F27405] text-white shadow-lg hover:bg-[#d96304] transition duration-300">
                     <FaPhone size={24} className="mr-2" />
-                    <span className="text-lg">Talk To Us</span>
+                    <span className="text-lg font-rubik">Talk To Us</span>
                 </button>
             </a>
         </div>
