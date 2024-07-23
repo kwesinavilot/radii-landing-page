@@ -23,7 +23,7 @@ const PcardHeader = React.forwardRef<
 >(({ className, ...props }, ref) => (
   <div
     ref={ref}
-    className={cn("flex flex-col space-y-1.5 p-6", className)}
+    className={cn("mx-auto font-rubik flex flex-col space-y-1.5 p-6", className)}
     {...props}
   />
 ))
@@ -36,7 +36,7 @@ const PcardPreTitle = React.forwardRef<
   <h3
     ref={ref}
     style={{ color: '#1D1D1D' }}
-    className={cn("flex items-center p-6 pt-0 font-bold", className)}
+    className={cn("mx-auto font-rubik flex items-center p-6 pt-0 font-bold", className)}
     {...props}
   />
 ))
@@ -49,7 +49,7 @@ const PcardPreTitle2 = React.forwardRef<
   <h3
     ref={ref}
     style={{ color: '#1D1D1D' }}
-    className={cn("flex items-center text-sm text-muted-foreground", className)}
+    className={cn("mx-auto font-rubik flex items-center text-sm text-muted-foreground", className)}
     {...props}
   />
 ))
@@ -63,7 +63,7 @@ const PcardTitle = React.forwardRef<
     ref={ref}
     style={{ color: '#038C7F' }}
     className={cn(
-      "flex items-center text-4xl font-bold leading-none tracking-tight",
+      "mx-auto font-volkhov flex items-center text-4xl font-bold leading-none tracking-tight",
       className
     )}
     {...props}
@@ -77,7 +77,7 @@ const PcardDescription = React.forwardRef<
 >(({ className, ...props }, ref) => (
   <p
     ref={ref}
-    className={cn("flex items-center text-sm text-muted-foreground", className)}
+    className={cn("mx-auto font-rubik flex items-center text-sm text-muted-foreground", className)}
     {...props}
   />
 ))
@@ -90,7 +90,7 @@ const PcardContent = React.forwardRef<
   <div 
     ref={ref}
     style={{ color: '#1D1D1D' }}
-    className={cn("flex items-center text-sm text-muted-foreground space-y-6", className)}
+    className={cn("font-rubik flex items-center text-sm text-muted-foreground space-y-6", className)}
     {...props} />
 ))
 PcardContent.displayName = "PcardContent"
@@ -101,7 +101,7 @@ const PcardFooter = React.forwardRef<
 >(({ className, ...props }, ref) => (
   <div
     ref={ref}
-    className={cn("flex items-center text-sm", className)}
+    className={cn("mx-auto font-rubik flex items-center text-sm", className)}
     {...props}
   />
 ))

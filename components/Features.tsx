@@ -24,12 +24,12 @@ const Features = () => {
                     className="flex flex-col justify-center md:w-1/2 text-center lg:text-start"
                 >
                     <div id="header" data-aos="fade-up" data-aos-duration="2000">
-        <p className='text-[#F27405] text-start font-light pt-12'>FEATURE</p>
+        <p className='text-[#F27405] text-start font-light pt-12 font-rubik'>FEATURE</p>
         <br />
         
       </div>
-                    <h1 className='text-4xl lg:text-6xl font-bold my-4'>Why Choose Us</h1>
-                    <p>Radii empowers businesses with data-driven insights to make <br />informed decisions and achieve strategic growth.</p>
+                    <h1 className='text-4xl lg:text-6xl font-bold my-4 font-volkhov'>Why Choose Us</h1>
+                    <p className='font-rubik'>Radii empowers businesses with data-driven insights to make <br />informed decisions and achieve strategic growth.</p>
                 </div>
                 <div className="md:w-1/2 my-10 px-8">
                     <div className='border rounded-lg overflow-hidden shadow-lg p-3'
@@ -40,8 +40,8 @@ const Features = () => {
                         <div className='flex items-center gap-6'>
                             <Image src={DashboardImage} alt='Dashboard Image' width={100} height={100} />
                             <div>
-                                <h6 className='text-lg font-bold'>Custom Dashboards</h6>
-                                <p className='text-xs'>Create personalized dashboards and visualizations with ease.
+                                <h6 className='text-lg font-bold font-rubik'>Custom Dashboards</h6>
+                                <p className='text-sm font-rubik'>Create personalized dashboards and visualizations with ease.
                                 </p>
                             </div>
                         </div>
@@ -55,8 +55,8 @@ const Features = () => {
                         <div className='flex items-center gap-6'>
                             <Image src={insightImage} alt='Dashboard Image' width={100} height={100} />
                             <div>
-                                <h6 className='text-lg font-bold'>Real-Time Analytics</h6>
-                                <p className='text-xs'>Access up-to-date information to drive informed decision-making.</p>
+                                <h6 className='text-lg font-bold font-rubik'>Real-Time Analytics</h6>
+                                <p className='text-sm font-rubik'>Access up-to-date information to drive informed decision-making.</p>
                             </div>
                         </div>
                     </div>
@@ -69,8 +69,8 @@ const Features = () => {
                         <div className='flex items-center gap-6'>
                             <Image src={intelligenceImage} alt='Dashboard Image' width={100} height={100} />
                             <div>
-                                <h6 className='text-lg font-bold'>AI-Powered Insights</h6>
-                                <p className='text-xs'>Leverage artificial intelligence to generate meaningful insights.
+                                <h6 className='text-lg font-bold font-rubik'>AI-Powered Insights</h6>
+                                <p className='text-sm font-rubik'>Leverage artificial intelligence to generate meaningful insights.
                                 </p>
                             </div>
                         </div>
@@ -84,8 +84,8 @@ const Features = () => {
                         <div className='flex items-center gap-6'>
                             <Image src={competitiveImage} alt='Dashboard Image' width={100} height={100} />
                             <div>
-                                <h6 className='text-lg font-bold'>Unified Data Source</h6>
-                                <p className='text-xs'>Consolidate all your data for a complete, accurate view.
+                                <h6 className='text-lg font-bold font-rubik'>Unified Data Source</h6>
+                                <p className='text-sm font-rubik'>Consolidate all your data for a complete, accurate view.
                                 </p>
                             </div>
                         </div>

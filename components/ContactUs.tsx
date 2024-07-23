@@ -121,27 +121,27 @@ function ContactUs() {
           ) : (
             <Card className="lg:w-[410px] lg:h-[550px]" style={{ boxShadow: '0px 10px 15px rgba(0, 0, 0, 0.1)' }} data-aos="zoom-out">
               <CardHeader>
-                <CardTitle className="text-base lg:text-2xl font-bold text-[#F27405]">Contact Us</CardTitle>
+                <CardTitle className="text-base lg:text-2xl font-bold font-rubik text-[#F27405]">Contact Us</CardTitle>
               </CardHeader>
               <CardContent>
                 <form method="POST" onSubmit={addToContacts}>
                   <div className="grid w-full items-center gap-4">
                     <div className="flex flex-col space-y-1.5">
-                      <Label htmlFor="email">Email</Label>
-                      <Input id="email" name="email" placeholder="Eg: maku@agriguard.com" />
+                      <Label className='font-rubik' htmlFor="email">Email</Label>
+                      <Input className='font-rubik' id="email" name="email" placeholder="Eg: maku@agriguard.com" />
                     </div>
                     <br />
                     <div className="flex flex-col space-y-1.5">
-                      <Label htmlFor="phonenumber">Phone Number</Label>
-                      <Input id="phonenumber" name="phonenumber" placeholder="Eg: +2348012345678 or +2336012345678" />
+                      <Label className='font-rubik' htmlFor="phonenumber">Phone Number</Label>
+                      <Input className='font-rubik' id="phonenumber" name="phonenumber" placeholder="Eg: +2348012345678 or +2336012345678" />
                     </div>
                     <br />
                     <div className="flex flex-col space-y-1.5">
-                      <Label htmlFor="message">Your Message</Label>
+                      <Label className='font-rubik' htmlFor="message">Your Message</Label>
                       <div className="grid w-full gap-2">
-                        <Textarea name="message" placeholder="Eg: I would like to book a demo..." />
+                        <Textarea className='font-rubik' name="message" placeholder="Eg: I would like to book a demo..." />
                         <br />
-                        <Button type="submit" style={{ backgroundColor: '#F27405' }}>Send message</Button>
+                        <Button className='font-rubik font-bold' type="submit" style={{ backgroundColor: '#F27405' }}>Send message</Button>
                       </div>
                     </div>
                   </div>
@@ -151,17 +151,17 @@ function ContactUs() {
           )}
         </div>
         <div className="my-4 text-center -order-1 lg:order-2 lg:w-[50%] mx-auto lg:py-12 lg:px-8 self-center">
-          <h1 className="text-[#0A1117] font-bold text-2xl text-center lg:text-start lg:text-5xl">Let's Discuss How Radii Can Help Your Business</h1>
-          <p className="text-[#0A1117] font-light text-l text-center lg:text-start my-1 lg:my-4">Start your journey towards data-driven decision-making.
+          <h1 className="text-[#0A1117] font-bold font-volkhov text-2xl text-center lg:text-start lg:text-5xl">Let's Discuss How Radii Can Help Your Business</h1>
+          <p className="text-[#0A1117] font-normal font-rubik text-l text-center lg:text-start my-1 lg:my-4">Start your journey towards data-driven decision-making.
             Contact us today for a personalized consultation.</p>
           <div className="flex row justify-between ">
             <div className="flex items-center justify-start lg:justify-start my-1 gap-4">
                 <MdOutlineLocationOn style={{ color: '#F27405' }} />
-                <p className="text-sm">Accra, Ghana</p>
+                <p className="text-sm font-rubik">Accra, Ghana</p>
             </div>
             <div className="flex items-center justify-start lg:justify-start my-1 gap-4">
               <AiOutlineMail style={{ color: '#F27405',  }} />
-              <p className="text-sm">oyinlade@getradii.com </p>
+              <p className="text-sm font-rubik">oyinlade@getradii.com </p>
             </div>
           </div>
         </div>
@@ -170,27 +170,27 @@ function ContactUs() {
         <ModalOverlay bg="rgba(0, 0, 0, 0.5)" alignItems="center" justifyContent="center" />
         <ModalContent bg="white">
         <br /><br />
-          <ModalHeader className="font-bold text-4xl text-center">Message Received!</ModalHeader>
+          <ModalHeader className="font-bold text-4xl text-center font-rubik">Message Received!</ModalHeader>
           <br />
           <ModalBody>
-            <Text className=" text-sm text-center">
+            <Text className=" text-sm text-center font-rubik">
               Thank you for reaching out to us. We have received your message and will get back to you shortly.
             </Text>
-            <Text className=" text-sm text-center">
+            <Text className=" text-sm text-center font-rubik">
               In the meantime, you can engage with us on social media:
             </Text>
-            <Link href="https://www.linkedin.com/company/radii/" isExternal flex={1}>
+            <Link className= 'font-rubik' href="https://www.linkedin.com/company/radii/" isExternal flex={1}>
             <br />
             <Flex alignItems="center" justifyContent="center">
               <FaLinkedin />
-              <Text className="text-sm text-center">@radii</Text>
+              <Text className="text-sm text-center font-rubik">@radii</Text>
             </Flex>
 
             </Link>
           </ModalBody>
           <br /><br />
           <ModalFooter alignItems="center" justifyContent="center">
-            <Button onClick={onClose}>
+            <Button className= 'font-rubik' onClick={onClose}>
               Close
             </Button>
           </ModalFooter>

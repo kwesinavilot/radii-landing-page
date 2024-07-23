@@ -12,9 +12,9 @@ const HeroSection = () => {
     <section className="lg:flex py-20">
       <div className="flex flex-col lg:flex-row z-10 items-center relative lg:flex gap-4 lg:gap-0 top-10 ">
         <div className="lg:w-[50%] lg:px-32 mx-auto text-start lg:text-start px-4 py-10">
-          <p className="text-[#F27405] font-light">UNLOCK YOUR BUSINESS POTENTIAL</p>
-          <h1 className="text-2xl mt-4 lg:text-6xl font-bold relative after:absolute after:content-[''] after:top-0 after:bg">Eliminate Guesswork,<br />Drive Growth</h1>
-          <p className="lg:my-8 my-2">Stop relying on trial and error. Integrate all your data sources to unlock actionable insights and make strategic decisions that propel your business forward.</p>
+          <p className="text-[#F27405] font-light font-rubik">UNLOCK YOUR BUSINESS POTENTIAL</p>
+          <h1 className="text-2xl font-volkhov mt-4 lg:text-6xl font-bold relative after:absolute after:content-[''] after:top-0 after:bg">Eliminate Guesswork,<br />Drive Growth</h1>
+          <p className="lg:my-8 my-2 font-rubik">Stop relying on trial and error. Integrate all your data sources to unlock actionable insights and make strategic decisions that propel your business forward.</p>
           
           <div className="bg-white shadow-lg absolute left-0 lg:w-[40%] p-4 lg:ps-[8rem] rounded-ee-[1rem] rounded-se-[1rem]">
             <div className="flex gap-12">
@@ -23,7 +23,7 @@ const HeroSection = () => {
                 href="https://app.getradii.com/signup"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-[#F27405] text-white px-4 cursor-pointer py-2 text-l rounded-xl">Try It Now</Link>
+                className="bg-[#F27405] text-white px-4 cursor-pointer py-2 text-l font-rubik font-bold rounded-xl">Try It Now</Link>
               <div className="flex items-center gap-2">
               <BsPlayCircle color="#F27405" size="2em" />
               <Link
@@ -31,7 +31,7 @@ const HeroSection = () => {
               href="https://youtu.be/ihEpnzgt_Yc"
               target="_blank"
               rel="noopener noreferrer"
-              className=''
+              className='font-rubik'
               >
                 Play Demo
               </Link>

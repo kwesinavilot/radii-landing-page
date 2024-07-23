@@ -65,7 +65,7 @@ const Footer = () => {
 
   return (
     <div className="relative bg-[#182632] h-[15rem] lg:h-[422px] lg:flex flex-col items-center justify-center">
-      <div className="lg:w-full  justify-center">
+      <div className="lg:w-full  justify-center ">
         {/* <Image
           src="/images/footercut.png"
           alt="footercut"
@@ -75,8 +75,8 @@ const Footer = () => {
         /> */}
         <form className="mx-auto max-w-[500px] p-4" onSubmit={addToWaitlist}>
           <div className="text-center font-bold text-white">
-            <p className="lg:text-3xl text-center capitalize">Join our waitlist</p>
-            <p className="text-[#9BCAB8] lg:my-4 font-light text-xs">Join and be part of our early testers</p>
+            <p className="lg:text-3xl text-center capitalize font-volkhov">Join our waitlist</p>
+            <p className="text-[#9BCAB8] lg:my-4 font-light text-xs font-rubik">Join and be part of our early testers</p>
           </div>
           <div className="flex items-center lg:gap-2 gap-3">
             <div className="bg-white w-[70%] mx-auto my-2 lg:h-[44px] h-[24px] flex items-center rounded-r rounded-l p-4">
@@ -90,7 +90,7 @@ const Footer = () => {
                   <Input
                     type="email"
                     name="email"
-                    className="h-[18px] border-none placeholder:text-xs placeholder:text-grey"
+                    className="h-[18px] border-none font-rubik placeholder:text-xs placeholder:text-grey"
                     placeholder="Your email"
                     required
                   />
@@ -99,7 +99,7 @@ const Footer = () => {
             </div>
             <Button
               type="submit"
-              className={`lg:h-[44px] h-[32px] lg:p-4 p-2 rounded-l rounded-r bg-[#F27405] hover:bg-[#F27405] ${
+              className={`lg:h-[44px] h-[32px] font-rubik lg:p-4 p-2 rounded-l rounded-r bg-[#F27405] hover:bg-[#F27405] ${
                 isSubmitting ? 'opacity-50 cursor-not-allowed' : ''
               }`}
               disabled={isSubmitting}
@@ -160,23 +160,23 @@ const Footer = () => {
       <Modal isOpen={isOpen} onClose={onClose} isCentered>
         <ModalOverlay />
         <ModalContent bg="white" p={5}>
-          <ModalHeader className="font-bold text-4xl text-center">Message Received!</ModalHeader>
+          <ModalHeader className="font-bold font-rubik text-4xl text-center">Message Received!</ModalHeader>
           <ModalBody>
-            <Text mb={4} textAlign="center">
+            <Text className= 'font-rubik' mb={4} textAlign="center">
               Thank you for reaching out to us. We have received your message and will get back to you shortly.
             </Text>
-            <Text mb={4} textAlign="center">
+            <Text className= 'font-rubik' mb={4} textAlign="center">
               In the meantime, you can engage with us on social media:
             </Text>
-            <Link href="https://www.linkedin.com/company/radii/" passHref>
+            <Link className= 'font-rubik' href="https://www.linkedin.com/company/radii/" passHref>
               <Flex as="a" alignItems="center" justifyContent="center">
                 <FaLinkedin />
-                <Text ml={2}>@radii</Text>
+                <Text className= 'font-rubik' ml={2}>@radii</Text>
               </Flex>
             </Link>
           </ModalBody>
           <ModalFooter justifyContent="center">
-            <Button onClick={onClose}>Close</Button>
+            <Button className= 'font-rubik' onClick={onClose}>Close</Button>
           </ModalFooter>
         </ModalContent>
       </Modal>
@@ -191,7 +191,7 @@ const Footer = () => {
 export function SubFooter() {
   return (
     <div className="w-full text-white py-4 text-center">
-      <p>© 2024 Radii. All rights reserved.</p>
+      <p className= 'font-rubik'>© 2024 Radii. All rights reserved.</p>
     </div>
   );
 }
