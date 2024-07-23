@@ -24,17 +24,17 @@ const Pricing = () => {
   return (
     <section className={styles.pricingSection}>
        <div id="header" data-aos="fade-up" data-aos-duration="2000">
-        <span className='text-[#F27405] font-light'>OUR PRICING</span>
+        <span className='text-[#F27405] font-light font-rubik'>OUR PRICING</span>
         <br />
         <br />
         <br />
       </div>
-      {/* <div className=" flex lg:flex-row flex-col lg:w-[1248px] w-full gap-5 justify-center items-center">
+      <div className=" flex lg:flex-row flex-col lg:w-[1248px] w-full gap-5 justify-center items-center">
         <Pcard className='flex flex-col p-5 lg:w-1/3 w-[83vw] shadow-lg justify-center items-center bg-white' 
                data-aos="flip-left" data-aos-duration="2000">
           <PcardHeader>
             <PcardPreTitle>Freemium</PcardPreTitle>
-            <PcardPreTitle2>Monthly Charge</PcardPreTitle2>
+            <PcardPreTitle2  className='mx-auto'>Monthly Charge</PcardPreTitle2>
             <br />
             <div className="flex justify-center">
               <PcardTitle>$0</PcardTitle>
@@ -140,7 +140,7 @@ const Pricing = () => {
           <br />
           <PcardContent>
             <div className="flex flex-col items-center justify-center">
-              <p style={{ color: '#ffffff', flex:'display', justifyItems:'center', alignContent:'center'}}>Unlimited access to all supported data sources, including custom integrations</p>
+              <p style={{ color: '#ffffff', flex:'display', justifyItems:'center', alignContent:'center', margin:'auto'}}>Unlimited access including custom integrations</p>
               <br />
               <p style={{ color: '#ffffff' }}>Unlimited queries</p>
               <br />
@@ -150,7 +150,7 @@ const Pricing = () => {
               <br />
               <p style={{ color: '#ffffff' }}>Dedicated account manager and 24/7 support</p>
               <br />
-              <p style={{ color: '#ffffff' }}>15 GB (Custom storage solutions tailored to business needs)</p>
+              <p style={{ color: '#ffffff', flex:'display', justifyItems:'center', alignContent:'center', margin:'auto' }}>15 GB (Custom storage tailored to business needs)</p>
               <br />
             </div>
           </PcardContent>
@@ -172,24 +172,24 @@ const Pricing = () => {
             </div>
           </PcardFooter>
         </Pcard>
-      </div> */}
-      <div id="header" data-aos="zoom-in" data-aos-duration="2000">
-        <Image src="/images/price.png" alt="Hero Image" width={1440} height={1000} />
       </div>
+      {/* <div id="header" data-aos="zoom-in" data-aos-duration="2000">
+        <Image src="/images/price.png" alt="Hero Image" width={1440} height={1000} />
+      </div> */}
       {/* <div id="header" data-aos="fade-up" data-aos-duration="2000">
         {/* <p className=' text-center font-light py-10 text-sm'>Additional tokens may be purchsed for high frequency users (Contact sales for a custom plan)</p> */}
         {/* <br />
         <br />
       // </div> */}  
-      <div className="flex flex-col items-center">
-        <a href="https://wa.link/j508ug" target="_blank" rel="noopener noreferrer">
+      {/* <div className="flex flex-col items-center">
+        <a className='font-rubik' href="https://wa.link/j508ug" target="_blank" rel="noopener noreferrer">
               <button style={{ border: '1px solid #F27405', borderRadius: '25px', color: '#F27405', fontWeight: 'bold', padding: '12px 80px', marginBottom: '10px' }} 
                       onMouseOver={(e) => { e.currentTarget.style.backgroundColor = '#F27405'; e.currentTarget.style.color = 'white'; }}
                       onMouseOut={(e) => { e.currentTarget.style.backgroundColor = 'transparent'; e.currentTarget.style.color = '#F27405'; }}>
                 Contact Sales
               </button>
         </a>
-      </div>
+      </div> */}
     </section>
   );
 };
