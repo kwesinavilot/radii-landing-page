@@ -17,8 +17,11 @@
         "name": "next"
       }
     ],
+    "baseUrl": ".",
     "paths": {
-      "@/*": ["./*"]
+      "@/*": ["./*"],
+      "@/components/*": ["components/*"],
+      "@/lib/*": ["lib/*"]
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "components/WhoWeAre.tsx", "components/MobileNav.js", "components/ContactUs.tsx", "components/Faq.tsx", "components/Features.tsx", "components/Footer.tsx", "components/HeroSection.tsx", "components/index.tsx", "components/NavigationBar.tsx", "components/NavigationMenuDemo.tsx", "components/Pricing.tsx", "components/PricingMobile.tsx"],
