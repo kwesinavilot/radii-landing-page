@@ -31,7 +31,7 @@ const Features = () => {
                     <h1 className='text-4xl lg:text-6xl font-bold my-4 font-volkhov'>Why Choose Us</h1>
                     <p className='font-rubik'>Radii empowers businesses with data-driven insights to make <br />informed decisions and achieve strategic growth.</p>
                 </div>
-                <div className="md:w-1/2 my-10 px-8">
+                <div className="md:w-1/2 my-10 px-8 ">
                     <div className='border rounded-lg overflow-hidden shadow-lg p-3'
                         data-aos="zoom-in-up"
                         data-aos-easing="ease-out-cubic"
@@ -40,7 +40,7 @@ const Features = () => {
                         <div className='flex items-center gap-6'>
                             <Image src={DashboardImage} alt='Dashboard Image' width={100} height={100} />
                             <div>
-                                <h6 className='text-lg font-bold font-rubik'>Custom Dashboards</h6>
+                                <h6 className='text-lg font-bold font-rubik '>Custom Dashboards</h6>
                                 <p className='text-sm font-rubik'>Create personalized dashboards and visualizations with ease.
                                 </p>
                             </div>
