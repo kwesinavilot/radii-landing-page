@@ -57,7 +57,7 @@ const NavigationBar: React.FC = () => {
                         <a href={`#${link}`} onClick={(e) => smoothScroll(e, `#${link}`)}>{link}</a>
                     </li>
                 ))}
-                <li className="nav-links px-4 cursor-pointer capitalize font-medium bg-[#F27405] rounded-xl text-[#ffffff] py-2 hover:scale-105 hover:text-[#F27405] duration-200 link-underline">
+                <li className="nav-links px-4 cursor-pointer capitalize font-medium bg-[#F27405] rounded-xl text-[#ffffff] py-2 hover:scale-105 duration-200 link-underline">
                     <a className='font-rubik ' href="https://app.getradii.com/signin" target="_blank" rel="noopener noreferrer">Sign In</a>
                 </li>
             </ul>
@@ -79,7 +79,7 @@ const NavigationBar: React.FC = () => {
                             <a href={`#${link}`} onClick={(e) => smoothScroll(e, `#${link}`)}>{link}</a>
                         </li>
                     ))}
-                    <li className="font-rubik px-4 cursor-pointer capitalize py-3 text-xl bg-[#F27405] text-white rounded-2xl">
+                    <li className="font-rubik px-4 cursor-pointer capitalize py-3 text-xl bg-[#F27405] hover:scale-105 text-white rounded-2xl">
                         <a className='font-rubik' onClick={() => setNav(!nav)} href="https://app.getradii.com/" target="_blank" rel="noopener noreferrer">Sign In</a>
                     </li>
                 </ul>
@@ -87,7 +87,7 @@ const NavigationBar: React.FC = () => {
 
             {/* FAB Button */}
             <a href="https://wa.link/j508ug" target="_blank" rel="noopener noreferrer">
-                <button className="fab fixed bottom-10 right-10 flex items-center p-4 rounded-full bg-[#F27405] text-white shadow-lg hover:bg-[#d96304] transition duration-300">
+                <button className="fab fixed bottom-10 right-10 flex items-center p-4 hover:scale-105 rounded-full bg-[#F27405] text-white shadow-lg hover:bg-[#d96304] transition duration-300">
                     <FaPhone size={24} className="mr-2" />
                     <span className="text-lg font-rubik">Talk To Us</span>
                 </button>

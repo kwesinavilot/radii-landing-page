@@ -23,8 +23,8 @@ const HeroSection = () => {
                 href="https://app.getradii.com/signup"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-[#F27405] text-white px-4 cursor-pointer py-2 text-l font-rubik font-bold rounded-xl">Try It Now</Link>
-              <div className="flex items-center gap-2">
+                className="bg-[#F27405] text-white px-4 cursor-pointer py-2 text-l font-rubik font-bold hover:scale-105 rounded-xl">Try It Now</Link>
+              <div className="flex items-center gap-2 hover:scale-105">
               <BsPlayCircle color="#F27405" size="2em" />
               <Link
               onClick={() => setButton(!herobutton)}
