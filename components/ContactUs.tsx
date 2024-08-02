@@ -105,7 +105,7 @@ function ContactUs() {
   }
 
   return (
-    <section id="Contact Us" className="lg:px-8 bg-gray-50 py-10">
+    <section id="Contact" className="lg:px-8 bg-gray-50 py-10">
       <div className="flex flex-col lg:flex-row lg:my-24 my-4 w-[75%] mx-auto">
         <div>
           {isSubmitting ? (
