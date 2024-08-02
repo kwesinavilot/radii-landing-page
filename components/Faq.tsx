@@ -23,7 +23,7 @@ const Faq = () => {
         <AccordionItem value="item-1">
             <AccordionTrigger className='font-rubik'>What types of services does Radii offer?</AccordionTrigger>
             <AccordionContent className='font-rubik'>
-            Radii offers data intelligence services tailored for startups and investors in Africa.
+            Radii offers data intelligence services tailored for startups and investors.
             These services include seamless data integration, powerful analytics tools, insightful
             reporting, and collaborative features, all designed to empower users with actionable insights for informed decision-making and strategic growth.
             </AccordionContent>
