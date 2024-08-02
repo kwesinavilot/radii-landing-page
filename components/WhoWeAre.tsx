@@ -25,13 +25,22 @@ const WhoWeAre = () => {
         </div>
    
         <div className='lg:flex flex flex-col lg:flex-row items-center gap-6 justify-center'>
+        <Card className='w-[267px] h-[314px] rounded-3xl border-none shadow-lg relative z-20'>
+            <CardHeader>
+              <div className='w-fit mx-auto my-10'>
+                  <Image src="/images/icons/SI Icon.png" alt="Effortless Reporting" width={50} height={50} />
+              </div>
+              <CardTitle className='text-xl font-bold font-rubik'>Seamless Integrations</CardTitle>
+              <CardDescription className='font-rubik'>Integrate your diverse data sources into a simple and unified interface to speed up decision making</CardDescription>
+            </CardHeader>
+          </Card>
           <Card className='w-[267px] h-[314px] rounded-3xl border-none shadow-lg relative z-20'>
             <CardHeader>
               <div className='w-fit mx-auto my-10'>
                   <Image src="/images/icons/er.png" alt="Effortless Reporting" width={50} height={50} />
               </div>
               <CardTitle className='text-xl font-bold font-rubik'>Effortless Reporting</CardTitle>
-              <CardDescription className='font-rubik w-40 mx-auto'>Easily create tailored market reports by on industries and regions in minutes</CardDescription>
+              <CardDescription className='font-rubik w-40 mx-auto'>Easily create tailored market reports on industries and regions in minutes</CardDescription>
             </CardHeader>
           </Card>
           <Card className='w-[267px] h-[314px] rounded-3xl border-none shadow-lg relative z-20'>
@@ -44,15 +53,7 @@ const WhoWeAre = () => {
                   and artificial intelligence solutions built on your own data.</CardDescription>
               </CardHeader>
           </Card>
-          <Card className='w-[267px] h-[314px] rounded-3xl border-none shadow-lg relative z-20'>
-            <CardHeader>
-              <div className='w-fit mx-auto my-10'>
-                  <Image src="/images/icons/SI Icon.png" alt="Effortless Reporting" width={50} height={50} />
-              </div>
-              <CardTitle className='text-xl font-bold font-rubik'>Seamless Integrations</CardTitle>
-              <CardDescription className='font-rubik'>Integrate your diverse data sources into a simple and unified interface to speed up decision making</CardDescription>
-            </CardHeader>
-          </Card>
+          
         </div>
       </div>
       <div className='absolute bottom-10 left-[18%] z-0 hidden lg:block'>
