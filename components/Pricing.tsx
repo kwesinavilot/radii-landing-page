@@ -22,7 +22,7 @@ const Pricing = () => {
   }, []);
 
   return (
-    <section className={styles.pricingSection}>
+    <section id='Pricing' className={styles.pricingSection}>
        <div id="header" data-aos="fade-up" data-aos-duration="2000">
         <span className='text-[#F27405] font-light font-rubik'>OUR PRICING</span>
         <br />
@@ -33,7 +33,7 @@ const Pricing = () => {
         <Pcard className='flex flex-col p-5 lg:w-1/3 w-[83vw] shadow-lg justify-center items-center bg-white' 
                data-aos="flip-left" data-aos-duration="2000">
           <PcardHeader>
-            <PcardPreTitle>Freemium</PcardPreTitle>
+            <PcardPreTitle>Free</PcardPreTitle>
             <PcardPreTitle2  className='mx-auto'>Monthly Charge</PcardPreTitle2>
             <br />
             <div className="flex justify-center">
@@ -49,7 +49,7 @@ const Pricing = () => {
             <div className="flex flex-col items-center justify-center">
               <p>File Upload & Google drive(1 folder)</p>
               <br />
-              <p>100 queries/month</p>
+              <p>10 queries/month</p>
               <br />
               <p>5 views</p>
               <br />
@@ -57,7 +57,7 @@ const Pricing = () => {
               <br />
               <p>Chat & Email support with a 24-hour response time</p>
               <br />
-              <p>Up to 250 MB</p>
+              <p>Up to 50 MB</p>
             </div>
           </PcardContent>
           <br />
@@ -95,7 +95,7 @@ const Pricing = () => {
             <div className="flex flex-col items-center justify-center">
               <p>Access to all supported data sources</p>
               <br />
-              <p>1000 queries/month</p>
+              <p>100 queries/month</p>
               <br />
               <p>50 views</p>
               <br />
@@ -103,7 +103,7 @@ const Pricing = () => {
               <br />
               <p>Priority chat & email support with a 12-hour response time</p>
               <br />
-              <p>Up to 50 GB</p>
+              <p>Up to 1 GB</p>
             </div>
           </PcardContent>
           <br />
@@ -131,7 +131,7 @@ const Pricing = () => {
             </PcardPreTitle>
             <PcardPreTitle2 style={{ color: '#ffffff' }}>Monthly Charge</PcardPreTitle2>
             <br />
-            <PcardTitle style={{ color: '#ffffff' }}>$24.99</PcardTitle>
+            <PcardTitle style={{ color: '#ffffff', textAlign:'center' }}>Contact Sales for Pricing</PcardTitle>
           </PcardHeader>
           <br />
           <br />
@@ -150,7 +150,7 @@ const Pricing = () => {
               <br />
               <p style={{ color: '#ffffff' }}>Dedicated account manager and 24/7 support</p>
               <br />
-              <p style={{ color: '#ffffff', flex:'display', justifyItems:'center', alignContent:'center', margin:'auto' }}>15 GB (Custom storage tailored to business needs)</p>
+              <p style={{ color: '#ffffff', flex:'display', justifyItems:'center', alignContent:'center', margin:'auto' }}>5 GB (Custom storage tailored to business needs)</p>
               <br />
             </div>
           </PcardContent>
