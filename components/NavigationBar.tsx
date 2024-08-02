@@ -23,7 +23,7 @@ const NavigationBar: React.FC = () => {
         { id: 3, link: "Features" },
         { id: 4, link: "Pricing" },
         { id: 5, link: "FAQs" },
-        { id: 6, link: "Contact Us" },
+        { id: 6, link: "Contact" },
     ];
 
     useEffect(() => {
@@ -89,7 +89,7 @@ const NavigationBar: React.FC = () => {
             <a href="https://wa.link/j508ug" target="_blank" rel="noopener noreferrer">
                 <button className="fab fixed bottom-10 right-10 flex items-center p-4 hover:scale-105 rounded-full bg-[#F27405] text-white shadow-lg hover:bg-[#d96304] transition duration-300">
                     <FaPhone size={24} className="mr-2" />
-                    <span className="text-lg font-rubik">Talk To Us</span>
+                    <span className="text-lg font-rubik">Get Support</span>
                 </button>
             </a>
         </div>
