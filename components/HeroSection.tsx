@@ -9,7 +9,7 @@ import Link from 'next/link'
 const HeroSection = () => {
   const [herobutton, setButton] = useState(false);
   return (
-    <section className="lg:flex py-20">
+    <section id='Home' className="lg:flex py-20">
       <div className="flex flex-col lg:flex-row z-10 items-center relative lg:flex gap-4 lg:gap-0 top-10 ">
         <div className="lg:w-[50%] lg:px-32 mx-auto text-start lg:text-start px-4 py-10">
           <p className="text-[#F27405] font-light font-rubik">UNLOCK YOUR BUSINESS POTENTIAL</p>
