@@ -57,9 +57,16 @@ const NavigationBar: React.FC = () => {
                         <a href={`#${link}`} onClick={(e) => smoothScroll(e, `#${link}`)}>{link}</a>
                     </li>
                 ))}
-                <li className="nav-links px-4 cursor-pointer capitalize font-medium bg-[#F27405] rounded-xl text-[#ffffff] py-2 hover:scale-105 duration-200 link-underline">
-                    <a className='font-rubik ' href="https://app.getradii.com/signin" target="_blank" rel="noopener noreferrer">Sign In</a>
-                </li>
+                <div className="flex flex-row space-x-4">
+                    <li className="nav-links px-4 cursor-pointer capitalize font-medium border border-[#ffffff] rounded-xl text-[#ffffff] py-2 hover:scale-105 duration-200 link-underline">
+                        <a className='font-rubik' href="https://app.getradii.com/signin" target="_blank" rel="noopener noreferrer">Sign In</a>
+                    </li>
+                    <li className="nav-links px-4 cursor-pointer capitalize font-medium bg-[#F27405] rounded-xl text-[#ffffff] py-2 hover:scale-105 duration-200 link-underline">
+                        <a className='font-rubik' href="https://app.getradii.com/signup" target="_blank" rel="noopener noreferrer">Register</a>
+                    </li>
+                </div>
+
+
             </ul>
 
             <div
@@ -80,10 +87,12 @@ const NavigationBar: React.FC = () => {
                         </li>
                     ))}
                     <li className="font-rubik px-4 cursor-pointer capitalize py-3 text-xl bg-[#F27405] hover:scale-105 text-white rounded-2xl">
-                        <a className='font-rubik' onClick={() => setNav(!nav)} href="https://app.getradii.com/" target="_blank" rel="noopener noreferrer">Sign In</a>
+                        <a className='font-rubik' onClick={() => setNav(!nav)} href="https://app.getradii.com/" target="_blank" rel="noopener noreferrer">Register</a>
                     </li>
                 </ul>
             )}
+
+            
 
             {/* FAB Button */}
             <a href="https://wa.link/j508ug" target="_blank" rel="noopener noreferrer">
