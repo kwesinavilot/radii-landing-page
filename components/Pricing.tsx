@@ -49,11 +49,11 @@ const Pricing = () => {
             <div className="flex flex-col items-center justify-center">
               <p>File Upload & Google drive(1 folder)</p>
               <br />
-              <p>10 queries/month</p>
+              <p>10 Queries/month</p>
               <br />
-              <p>5 views</p>
+              <p>2 Views</p>
               <br />
-              <p>2 users</p>
+              <p>1 Users</p>
               <br />
               <p>Chat & Email support with a 24-hour response time</p>
               <br />
@@ -84,7 +84,7 @@ const Pricing = () => {
             <PcardPreTitle>Standard</PcardPreTitle>
             <PcardPreTitle2>Monthly Charge</PcardPreTitle2>
             <br />
-            <PcardTitle>$25</PcardTitle>
+            <PcardTitle>$20</PcardTitle>
           </PcardHeader>
           <br />
           <br />
@@ -95,11 +95,11 @@ const Pricing = () => {
             <div className="flex flex-col items-center justify-center">
               <p>Access to all supported data sources</p>
               <br />
-              <p>100 queries/month</p>
+              <p>100 Queries/month</p>
               <br />
-              <p>50 views</p>
+              <p>10 Views</p>
               <br />
-              <p>15 users</p>
+              <p>3 Users</p>
               <br />
               <p>Priority chat & email support with a 12-hour response time</p>
               <br />
@@ -142,11 +142,11 @@ const Pricing = () => {
             <div className="flex flex-col items-center justify-center">
               <p style={{ color: '#ffffff', flex:'display', justifyItems:'center', alignContent:'center', margin:'auto'}}>Unlimited access including custom integrations</p>
               <br />
-              <p style={{ color: '#ffffff' }}>Unlimited queries</p>
+              <p style={{ color: '#ffffff' }}>450 Queries/month</p>
               <br />
-              <p style={{ color: '#ffffff' }}>Unlimited</p>
+              <p style={{ color: '#ffffff' }}>20 Views</p>
               <br />
-              <p style={{ color: '#ffffff' }}>Unlimited users</p>
+              <p style={{ color: '#ffffff' }}>10 Users</p>
               <br />
               <p style={{ color: '#ffffff' }}>Dedicated account manager and 24/7 support</p>
               <br />
